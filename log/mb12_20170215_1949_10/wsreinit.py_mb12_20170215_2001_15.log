@@ -1,0 +1,111 @@
+
+
+*****************************************************************
+Connecting to mb12h.tuc.stglabs.ibm.com,port 12311
+*****************************************************************
+
+
+
+*****************************************************************
+Telnet to mb12h.tuc.stglabs.ibm.com successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS11 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:07:33 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS11 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: date; cat '/dev/cpss0/ca/poke caWarmstartRecoveryOverrideCount 1'
+*****************************************************************
+
+SF75KX510ESS11 # date; cat '/dev/cpss0/ca/poke caWarmstartRecoveryOverrideCount 1'
+Wed Feb 15 20:07:33 MST 2017
+
+Value of variable caWarmstartRecoveryOverrideCount was 0 (0x0), is now 1 (0x1).
+
+SF75KX510ESS11 # 
+
+
+*****************************************************************
+Executing command: date; cat 'cat /dev/cpss0/ca/poke caWarmstartRecoveryOverride 2'
+*****************************************************************
+
+SF75KX510ESS11 # date; cat '/dev/cpss0/ca/poke caWarmstartRecoveryOverride 2'
+Wed Feb 15 20:07:33 MST 2017
+
+Value of variable caWarmstartRecoveryOverride was 4 (0x4), is now 2 (0x2).
+
+SF75KX510ESS11 # 
+
+
+*****************************************************************
+Executing command: getdebug warmstart
+*****************************************************************
+
+SF75KX510ESS11 # date; getdebug warmstart
+Wed Feb 15 20:07:34 MST 2017
+SF75KX510ESS11 # 
+
+
+*****************************************************************
+sleep for 1 minute, please wait...
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status after test completed
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS11 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:08:34 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS11 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Test Passed!
+*****************************************************************
+

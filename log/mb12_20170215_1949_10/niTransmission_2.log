@@ -1,0 +1,2087 @@
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:03:465] "<commandInitiator(#0):client #[main@106432088]-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.common.NIConnectionCommunication@28862886"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:03:663] "<responseHandler(#0):client #[main@106432088]-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.common.NIConnectionCommunication@53385338"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:03:863] "<eventInitiator(#1):client #[main@106432088]-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.common.NIEventConnectionCommunication@3f4e3f4e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:61] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.common.NIEventConnectionCommunication@65426542"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:76] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:0, Dest: (null), NIConnectionTypeQuery: Connection type = UNKNOWN(-1))"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:146] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:0"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:217] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:0, Dest: (HMC1, 4), NIConnectionTypeQuery: Connection type = NIServices.CONNECTION_TYPE_2107(3))"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:217] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:0"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:419] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1, Src: (null), Dest: (HMC, 2), NIEventServer.setSubscriber(7970c933, {Event: NIPeerSetEventImpl Date: 2017/02/15 23:11:04.385, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:110 [ null ], Event: NIPeerDeletedEventImpl Date: 2017/02/15 23:11:04.386, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:111 [ null ]}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:430] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:474] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1, Src: (HMC, 2), Dest: (HMC1, 4), NIEventServer.setSubscriber(7970c933, {Event: NIPeerSetEventImpl Date: 2017/02/15 23:11:04.385, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:110 [ null ], Event: NIPeerDeletedEventImpl Date: 2017/02/15 23:11:04.386, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:111 [ null ]}):true"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:474] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:481] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIGetStoragePlexIDCommand (null:null): null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:492] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:506] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIGetStoragePlexIDCommand (HMC1, 4:null): 8100LI7*P216833"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:507] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:04:781] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4, Src: (null), Dest: (HMC, 2), NIDomainService.getESSs():null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:04:859] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:94] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4, Src: (HMC, 2), Dest: (HMC1, 4), NIDomainService.getESSs():Successful: true; Return code: 0; Resource: [NIESS: [id = IBM.2107-75KX511, userName = , userDescription = BLsi, essNetCSEnabled = true, limitEssNetCS = false, allowedEssNetCS = IBM.2107-75KX511/V0, requestedState = NIESSStateOnline, state = NIESSStateOnline, model = 986, iSeriesSN = 599, nvsMemory = 16384, cacheMemory = 222496, processorMemory = 257536, isHostPrecheckEnabled = true, bundleVersion = 88.22.22.0, smartTierMode = 2, smartTierMonitoringMode = 1, ioPriorityManagementMode = 1, tritonMode = 0, etMirrorCoordinationMode = 2, ssdRaid10ArraySwitchStatus = 1, nearlineRaid10ArraySwitchStatus = 1, ssdRaid6ArraySwitchStatus = 1, numEncryptionGroupsSupported = 1, spaceReservationMode = 2, allocationOrderMode = 1, pidMCH = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCZS = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCBC = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCBCA = {N/A,N/A,N/A,N/A
+,N/A,N/A,}encryptionGroupsStates = { 3, 3 }, encryptionGroupsLastSuccessfulPKR = { { N/A }, { N/A }, { N/A }, { N/A } }, encryptionGroupsLastFailedPKR = { { N/A }, { N/A }, { N/A }, { N/A } }, raid5ArrayLargeCapacitySwitchStatus = 1 ] ]"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:94] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:113] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5, peerID: 7970c933:6, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:259] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:262] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6, peerID: 7970c933:5, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:301] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:337] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5, peerID: 7970c933:6, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIArraySiteImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:337] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:357] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6, peerID: 7970c933:5, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:357] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:376] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7, peerID: 7970c933:8, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:428] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:445] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:8, peerID: 7970c933:7, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:451] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7, peerID: 7970c933:8, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:451] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:453] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:8"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:551] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:8, peerID: 7970c933:7, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):Result of x51 query: 
+Async PPRC Status flags: 80
+Number of Data bytes: 4
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:551] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:8"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:563] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:9, peerID: 7970c933:a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:623] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:9"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:624] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:a, peerID: 7970c933:9, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:655] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:9, peerID: 7970c933:a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:656] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:9"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:659] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:716] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:a, peerID: 7970c933:9, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:716] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:720] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:b, peerID: 7970c933:c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:767] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:785] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:b, peerID: 7970c933:c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:785] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:788] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:c, peerID: 7970c933:b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:832] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:852] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:c, peerID: 7970c933:b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:852] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:854] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:d, peerID: 7970c933:e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:859] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:861] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:e, peerID: 7970c933:d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:900] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:912] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:d, peerID: 7970c933:e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:912] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:937] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:e, peerID: 7970c933:d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:937] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:940] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:f, peerID: 7970c933:10, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:972] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:05:983] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:f, peerID: 7970c933:10, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:983] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:05:984] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:10, peerID: 7970c933:f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:13] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:10"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:30] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:10, peerID: 7970c933:f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:30] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:10"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:34] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:11, peerID: 7970c933:12, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:62] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:11"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:72] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:11, peerID: 7970c933:12, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:72] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:11"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:74] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:12, peerID: 7970c933:11, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:108] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:12"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:118] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:12, peerID: 7970c933:11, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:118] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:12"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:121] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:13, peerID: 7970c933:14, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:152] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:13"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:159] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:14, peerID: 7970c933:13, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:163] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:13, peerID: 7970c933:14, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:163] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:13"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:170] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:14"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:195] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:14, peerID: 7970c933:13, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:195] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:14"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:197] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:15, peerID: 7970c933:16, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:223] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:15"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:232] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:15, peerID: 7970c933:16, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:233] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:15"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:233] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:16, peerID: 7970c933:15, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:261] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:16"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:306] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:16, peerID: 7970c933:15, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:307] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:16"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:309] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:17, peerID: 7970c933:18, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:339] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:17"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:346] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:18, peerID: 7970c933:17, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:355] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:17, peerID: 7970c933:18, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:355] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:17"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:356] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:18"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:380] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:18, peerID: 7970c933:17, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:380] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:18"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:382] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:19, peerID: 7970c933:1a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:408] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:19"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:416] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1a, peerID: 7970c933:19, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:422] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:19, peerID: 7970c933:1a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:422] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:19"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:423] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:460] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1a, peerID: 7970c933:19, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:460] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:466] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1b, peerID: 7970c933:1c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:496] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:497] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1c, peerID: 7970c933:1b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:549] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1b, peerID: 7970c933:1c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:549] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:550] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:559] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1c, peerID: 7970c933:1b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:559] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:560] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1d, peerID: 7970c933:1e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:591] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:606] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1e, peerID: 7970c933:1d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:608] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1d, peerID: 7970c933:1e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:608] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:609] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:640] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1e, peerID: 7970c933:1d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:640] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:642] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:1f, peerID: 7970c933:20, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:667] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:1f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:667] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:20, peerID: 7970c933:1f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:683] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:1f, peerID: 7970c933:20, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:683] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:1f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:684] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:20"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:708] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:20, peerID: 7970c933:1f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:709] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:20"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:710] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:21, peerID: 7970c933:22, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:740] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:21"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:752] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:22, peerID: 7970c933:21, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:769] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:21, peerID: 7970c933:22, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:769] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:21"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:770] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:22"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:806] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:22, peerID: 7970c933:21, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:806] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:22"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:808] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:23, peerID: 7970c933:24, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:838] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:23"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:852] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:23, peerID: 7970c933:24, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:853] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:23"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:854] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:24, peerID: 7970c933:23, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:862] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:24"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:888] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:24, peerID: 7970c933:23, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:888] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:24"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:895] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:25, peerID: 7970c933:26, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:922] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:25"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:922] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:26, peerID: 7970c933:25, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:935] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:25, peerID: 7970c933:26, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:935] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:25"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:936] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:26"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:960] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:26, peerID: 7970c933:25, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:960] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:26"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:961] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:27, peerID: 7970c933:28, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:06:993] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:27"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:06:995] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:28, peerID: 7970c933:27, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:8] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:27, peerID: 7970c933:28, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:8] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:27"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:9] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:28"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:29] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:28, peerID: 7970c933:27, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:30] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:28"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:31] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:29, peerID: 7970c933:2a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:58] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:29"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:60] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2a, peerID: 7970c933:29, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:73] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:29, peerID: 7970c933:2a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:73] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:29"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:75] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:100] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2a, peerID: 7970c933:29, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:100] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:102] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2b, peerID: 7970c933:2c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:133] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:135] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2c, peerID: 7970c933:2b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:148] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2b, peerID: 7970c933:2c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:148] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:149] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:174] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2c, peerID: 7970c933:2b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:174] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:176] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2d, peerID: 7970c933:2e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:206] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:206] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2e, peerID: 7970c933:2d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:219] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2d, peerID: 7970c933:2e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:219] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:220] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:239] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2e, peerID: 7970c933:2d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:239] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:241] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:2f, peerID: 7970c933:30, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:260] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:2f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:260] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:30, peerID: 7970c933:2f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:299] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:2f, peerID: 7970c933:30, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:299] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:2f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:299] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:30"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:321] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:30, peerID: 7970c933:2f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:321] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:30"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:322] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:31, peerID: 7970c933:32, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:352] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:31"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:352] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:32, peerID: 7970c933:31, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:365] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:31, peerID: 7970c933:32, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:365] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:31"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:366] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:32"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:386] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:32, peerID: 7970c933:31, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:386] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:32"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:387] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:33, peerID: 7970c933:34, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:413] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:33"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:414] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:34, peerID: 7970c933:33, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:426] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:33, peerID: 7970c933:34, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:426] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:33"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:427] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:34"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:451] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:34, peerID: 7970c933:33, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:451] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:34"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:453] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:35, peerID: 7970c933:36, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:459] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:35"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:459] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:36, peerID: 7970c933:35, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:487] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:36"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:505] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:35, peerID: 7970c933:36, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:505] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:35"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:513] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:36, peerID: 7970c933:35, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:513] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:36"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:515] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:37, peerID: 7970c933:38, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:546] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:37"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:546] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:38, peerID: 7970c933:37, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:562] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:37, peerID: 7970c933:38, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:562] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:37"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:563] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:38"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:579] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:38, peerID: 7970c933:37, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:579] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:38"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:580] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:39, peerID: 7970c933:3a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:606] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:39"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:606] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3a, peerID: 7970c933:39, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:618] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:39, peerID: 7970c933:3a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:618] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:39"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:619] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:647] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3a, peerID: 7970c933:39, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:647] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:648] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3b, peerID: 7970c933:3c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:659] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:659] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3c, peerID: 7970c933:3b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:679] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:699] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3b, peerID: 7970c933:3c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:699] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:708] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3c, peerID: 7970c933:3b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:708] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:710] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3d, peerID: 7970c933:3e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:737] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:738] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3e, peerID: 7970c933:3d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:749] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3d, peerID: 7970c933:3e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:749] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:751] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:785] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3e, peerID: 7970c933:3d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:786] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:787] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:3f, peerID: 7970c933:40, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:821] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:3f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:824] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:40, peerID: 7970c933:3f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:834] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:3f, peerID: 7970c933:40, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:835] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:3f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:836] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:40"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:857] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:40, peerID: 7970c933:3f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:857] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:40"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:859] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:41, peerID: 7970c933:42, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:920] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:41"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:921] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:42, peerID: 7970c933:41, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:933] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:41, peerID: 7970c933:42, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:933] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:41"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:934] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:42"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:958] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:42, peerID: 7970c933:41, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:958] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:42"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:959] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:43, peerID: 7970c933:44, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:07:989] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:43"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:07:989] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:44, peerID: 7970c933:43, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:2] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:43, peerID: 7970c933:44, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:2] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:43"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:3] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:44"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:27] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:44, peerID: 7970c933:43, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:27] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:44"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:28] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:45, peerID: 7970c933:46, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:58] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:45"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:59] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:46, peerID: 7970c933:45, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:74] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:45, peerID: 7970c933:46, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:74] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:45"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:75] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:46"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:125] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:46, peerID: 7970c933:45, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:125] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:46"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:127] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:47, peerID: 7970c933:48, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:156] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:47"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:157] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:48, peerID: 7970c933:47, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:170] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:47, peerID: 7970c933:48, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:170] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:47"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:171] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:48"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:192] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:48, peerID: 7970c933:47, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:192] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:48"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:193] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:49, peerID: 7970c933:4a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:220] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:49"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:220] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4a, peerID: 7970c933:49, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:232] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:49, peerID: 7970c933:4a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:232] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:49"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:233] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:263] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4a, peerID: 7970c933:49, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:263] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:264] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4b, peerID: 7970c933:4c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:296] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:299] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4c, peerID: 7970c933:4b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:310] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4b, peerID: 7970c933:4c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:310] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:311] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:334] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4c, peerID: 7970c933:4b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:334] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:335] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4d, peerID: 7970c933:4e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:364] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:365] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4e, peerID: 7970c933:4d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:378] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4d, peerID: 7970c933:4e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:378] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:379] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:403] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4e, peerID: 7970c933:4d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:403] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:404] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:4f, peerID: 7970c933:50, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:435] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:4f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:436] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:50, peerID: 7970c933:4f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:447] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:4f, peerID: 7970c933:50, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:447] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:4f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:448] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:50"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:473] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:50, peerID: 7970c933:4f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:473] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:50"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:474] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:51, peerID: 7970c933:52, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:513] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:51"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:513] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:52, peerID: 7970c933:51, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:577] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:51, peerID: 7970c933:52, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:577] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:51"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:578] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:52"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:587] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:52, peerID: 7970c933:51, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:587] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:52"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:589] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:53, peerID: 7970c933:54, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:637] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:53"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:639] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:54, peerID: 7970c933:53, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:663] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:53, peerID: 7970c933:54, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 1
+
+XDC Session and Device Info: 
+Successful: true; Return code: 0
+NISessionID [type = 40, number = 12]
+Session Status: 0x2
+Number of Volumes in the Session: 64
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083e 
+NISessionID [type 
+= 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopy
+Pending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Vol
+ume ID: IBM.2107-75KX511/0839 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0838 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0837 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended
+: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0836 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0835 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Vo
+lume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0834 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0833 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0832 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: t
+rue isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0831 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0830 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelati
+ons: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80
+ 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: 
+false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0829 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0828 
+NISessi
+onID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0827 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0826 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSe
+condaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0825 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0824 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return c
+ode: 0 
+Volume ID: IBM.2107-75KX511/0823 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0822 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0821 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrima
+rySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0820 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC
+ Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCop
+yPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+num
+berOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0819 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0818 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0817 
+NISessionID [type = 40, number = 12]
+Volume S
+tatus: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0816 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0815 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryF
+ullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0814 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0813 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/08
+12 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0811 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0810 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex
+: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: tru
+e; Return code: 0 
+Volume ID: IBM.2107-75KX511/080d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: fa
+lse isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0809 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID:
+ null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0808 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0807 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0806 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false i
+sPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0805 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0804 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended:
+ false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0803 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0802 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0801 
+NISessionID [type = 40, number = 1
+2]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0800 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:663] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:53"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:664] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:54"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:720] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:54, peerID: 7970c933:53, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:720] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:54"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:722] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:55, peerID: 7970c933:56, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:778] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:55"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:786] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:56, peerID: 7970c933:55, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:888] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:55, peerID: 7970c933:56, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):Result of x51 query: 
+Async PPRC Status flags: 0
+Number of Data bytes: 170
+
+Number of Master ESSs: 1
+Master ESS Number:[0] 
+Master ESS Information: 
+Master ESS Data Valid: true
+NISessionID [type = 40, number = 12]
+Consistency State: 1
+CG Interval Time(sec.): 0
+Maximum Coordination Interval Time(msec.): 50
+Maximum CG Drain Time(sec.): 240
+Current Time: Wed Feb 15 23:17:26 MST 2017
+Fatal Reason Code: 0
+Last CGFormTIme: Wed Feb 15 23:17:25 MST 2017
+Flash Copy Sequence Number: 0x:58a543f5
+Unsuccessful CG form attempts since last success: 0
+Percent CG Forms that were successful: 99
+Number of successful CGs: 6791
+Master CU Sequence Number: KX511 Master Plant of Manfacture: 75 Master Control Unit Type: 2107
+Master LSS number: 8
+
+Number of Subordinate Associations: 0
+
+First CG Failure Info
+: NIAsyncPPRCCGFailureInfoImpl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+Previous CG Failure Info: NIAsyncPPRCCGFailureInfoImpl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+Most Recent CG Failure Info: NIAsyncPPRCCGFailureInfoImpl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+
+Number of Master/Subordinate Associations: 0
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:888] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:55"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:889] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:56"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:900] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:56, peerID: 7970c933:55, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:900] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:56"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:904] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:57, peerID: 7970c933:58, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:08:976] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:57"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:08:976] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:58, peerID: 7970c933:57, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:4] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:57, peerID: 7970c933:58, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):Successful: true; Return code: 0; Resource: 19 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:4] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:57"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:6] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:58"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:20] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:58, peerID: 7970c933:57, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:21] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:58"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:22] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:59, peerID: 7970c933:5a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:61] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:59"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:61] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5a, peerID: 7970c933:59, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:110] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:130] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:59, peerID: 7970c933:5a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIAddressGroup: [id = IBM.2107-75KX511/2, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 8192, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 7, numConfiguredVolumes = 448], NIAddressGroup: [id = IBM.2107-75KX511/1, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 4096, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 12, numConfiguredVolumes = 652], NIAddressGroup: [id = IBM.2107-75KX511/8, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 32768, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 3, numConfiguredVolumes = 12], NIAddressGroup: [id = IBM.2107-75KX511/0, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 0, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 16, numConfig
+uredVolumes = 1792]]"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:130] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:59"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:138] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5a, peerID: 7970c933:59, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:138] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:139] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5b, peerID: 7970c933:5c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:190] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:190] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5c, peerID: 7970c933:5b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:228] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5b, peerID: 7970c933:5c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:228] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:228] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:237] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5c, peerID: 7970c933:5b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:237] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:249] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5d, peerID: 7970c933:5e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:261] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:261] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5e, peerID: 7970c933:5d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:292] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:309] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5d, peerID: 7970c933:5e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIAddressGroup: [id = IBM.2107-75KX511/2, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 8192, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 7, numConfiguredVolumes = 448], NIAddressGroup: [id = IBM.2107-75KX511/1, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 4096, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 12, numConfiguredVolumes = 652], NIAddressGroup: [id = IBM.2107-75KX511/8, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 32768, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 3, numConfiguredVolumes = 12], NIAddressGroup: [id = IBM.2107-75KX511/0, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 0, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 16, numConfig
+uredVolumes = 1792]]"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:309] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:317] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5e, peerID: 7970c933:5d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:317] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:318] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:5f, peerID: 7970c933:60, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:373] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:5f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:376] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:60, peerID: 7970c933:5f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:398] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:5f, peerID: 7970c933:60, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:398] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:5f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:399] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:60"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:414] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:60, peerID: 7970c933:5f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:414] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:60"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:417] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:61, peerID: 7970c933:62, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:462] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:61"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:463] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:62, peerID: 7970c933:61, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:503] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:61, peerID: 7970c933:62, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:503] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:61"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:504] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:62"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:512] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:62, peerID: 7970c933:61, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:512] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:62"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:514] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:63, peerID: 7970c933:64, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:549] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:63"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:549] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:64, peerID: 7970c933:63, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:572] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:63, peerID: 7970c933:64, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIExtentPool: [id = IBM.2107-75KX511/P3, rankGroup = 1, type = NIExtentTypeCKD, userName = CKD_1, numRanks = 5, numVolumes = 516, numExtents = 12165, extentStatus = 0, extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 12880, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P2, rankGroup = 0, type = NIExtentTypeCKD, userName = CKD_0, numRanks = 4, numVolumes = 520, numExtents = 9368, extentStatus = 0, extentLimitEnabled = true, extentLimit
+ = 1.0, extentThreshold = 0.15, numVirtualExtents = 11040, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P1, rankGroup = 1, type = NIExtentTypeFB, userName = FB_1, numRanks = 4, numVolumes = 516, numExtents = 6108, extentStatus = 0, extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 10960, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P0, rankGroup = 0, type = NIExtentTypeFB, userName = FB_0, numRanks = 5, numVolumes = 584, numExtents = 8601, extentStatus = 0,
+ extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 12100, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0]]"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:572] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:63"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:573] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:583] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:64, peerID: 7970c933:63, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:583] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:584] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:65, peerID: 7970c933:66, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:659] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:65"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:660] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:66, peerID: 7970c933:65, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:686] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:66"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:700] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:66, peerID: 7970c933:65, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:700] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:66"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:823] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:65, peerID: 7970c933:66, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P3; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 35.0; % extents available: 64.0; # extents: 12165; # extents allowed: 12141; # extents allocated: 4285; # extents reserved: 24; # extents available: 7856; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 80.0; % virtual extents available: 19.0; # virtual extents: 12880; # virtual extents allowed: 12880; # virtual extents allocated: 10320; # virtual extents reserved: 0; # virtual extents available: 2560; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.
+0; # ese threshold:0.0; # ese status:0; # monitor status:1; # total capacity: 13539645; # allow capacity: 13512933; # available capacity: 8743728; # allocated capacity: 4769205; # reserved capacity: 26712; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:823] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:65"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:824] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:67, peerID: 7970c933:68, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:859] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:67"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:860] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:68, peerID: 7970c933:67, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:886] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:68"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:09:899] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:68, peerID: 7970c933:67, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:09:899] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:68"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:26] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:67, peerID: 7970c933:68, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P2; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 40.0; % extents available: 59.0; # extents: 9368; # extents allowed: 9345; # extents allocated: 3741; # extents reserved: 23; # extents available: 5604; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 94.0; % virtual extents available: 5.0; # virtual extents: 11040; # virtual extents allowed: 11040; # virtual extents allocated: 10400; # virtual extents reserved: 0; # virtual extents available: 640; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; # 
+ese threshold:0.0; # ese status:0; # monitor status:1; # total capacity: 10426584; # allow capacity: 10400985; # available capacity: 6237252; # allocated capacity: 4163733; # reserved capacity: 25599; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:26] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:67"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:27] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:69, peerID: 7970c933:6a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:61] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:69"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:61] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6a, peerID: 7970c933:69, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:130] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:155] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6a, peerID: 7970c933:69, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:155] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:217] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:69, peerID: 7970c933:6a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P1; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 76.0; % extents available: 23.0; # extents: 6108; # extents allowed: 6085; # extents allocated: 4630; # extents reserved: 23; # extents available: 1455; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 94.0; % virtual extents available: 5.0; # virtual extents: 10960; # virtual extents allowed: 10960; # virtual extents allocated: 10320; # virtual extents reserved: 0; # virtual extents available: 640; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; #
+ ese threshold:0.0; # ese status:0; # monitor status:1; # total capacity: 6254592; # allow capacity: 6231040; # available capacity: 1489920; # allocated capacity: 4741120; # reserved capacity: 23552; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:217] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:69"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:218] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6b, peerID: 7970c933:6c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:259] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:260] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6c, peerID: 7970c933:6b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:293] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:306] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6c, peerID: 7970c933:6b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:306] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:485] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6b, peerID: 7970c933:6c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P0; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 60.0; % extents available: 39.0; # extents: 8601; # extents allowed: 8577; # extents allocated: 5211; # extents reserved: 24; # extents available: 3366; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 96.0; % virtual extents available: 3.0; # virtual extents: 12100; # virtual extents allowed: 12100; # virtual extents allocated: 11680; # virtual extents reserved: 0; # virtual extents available: 420; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; #
+ ese threshold:0.0; # ese status:0; # monitor status:1; # total capacity: 8807424; # allow capacity: 8782848; # available capacity: 3446784; # allocated capacity: 5336064; # reserved capacity: 24576; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 589824; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:485] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:486] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6d, peerID: 7970c933:6e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:524] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:524] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6e, peerID: 7970c933:6d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:550] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6d, peerID: 7970c933:6e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIArrayImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:550] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:551] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:597] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6e, peerID: 7970c933:6d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:597] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:598] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:6f, peerID: 7970c933:70, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:663] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:6f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:667] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:70, peerID: 7970c933:6f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:693] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:70"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:706] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:70, peerID: 7970c933:6f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:706] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:70"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:737] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:6f, peerID: 7970c933:70, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIRankImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:737] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:6f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:738] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:71, peerID: 7970c933:72, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:862] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:71"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:862] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:72, peerID: 7970c933:71, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:892] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:72"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:10:912] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:72, peerID: 7970c933:71, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:10:912] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:72"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:11:782] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:71, peerID: 7970c933:72, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):Successful: true; Return code: 0; Resource: 1100 instances of com.ibm.storage.ess.ni.resource.NIVolumeImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:11:782] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:71"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:11:800] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:73, peerID: 7970c933:74, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:11:863] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:73"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:11:864] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:74, peerID: 7970c933:73, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:11:900] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:74"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:11:924] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:74, peerID: 7970c933:73, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:11:924] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:74"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:527] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:73, peerID: 7970c933:74, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):Successful: true; Return code: 0; Resource: 1804 instances of com.ibm.storage.ess.ni.resource.NIVolumeImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:527] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:73"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:554] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:75, peerID: 7970c933:76, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:617] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:75"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:617] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:76, peerID: 7970c933:75, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:643] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:75, peerID: 7970c933:76, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 32 instances of com.ibm.storage.ess.ni.resource.NIFibreChannelPortImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:643] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:75"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:644] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:76"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:656] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:76, peerID: 7970c933:75, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:656] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:76"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:659] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:77, peerID: 7970c933:78, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:666] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:77"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:666] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:78, peerID: 7970c933:77, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:696] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:78"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:702] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:78, peerID: 7970c933:77, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:702] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:78"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:724] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:77, peerID: 7970c933:78, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:724] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:77"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:725] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:79, peerID: 7970c933:7a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:777] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:79"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:778] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7a, peerID: 7970c933:79, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:789] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:79, peerID: 7970c933:7a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):Successful: true; Return code: 0Candidate connection result: FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:49
+Attached Port: NIFCPPortID: IBM.2107-75KX511:258
+Link Destination Address: 000102
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:769
+Attached Port: NIFCPPortID: IBM.2107-75KX511:561
+Link Destination Address: 000231
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:258
+Attached Port: NIFCPPortID: IBM.2107-75KX511:49
+Link Destination Address: 0031
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:263
+Attached Port: NIFCPPortID: IBM.2107-75KX511:55
+Link Destination Address: 
+0037
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:561
+Attached Port: NIFCPPortID: IBM.2107-75KX511:769
+Link Destination Address: 000301
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:55
+Attached Port: NIFCPPortID: IBM.2107-75KX511:263
+Link Destination Address: 000107
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:565
+Attached Port: NIFCPPortID: IBM.2107-75KX511:775
+Link Destination Address: 000307
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:775
+Attached Port: NIFCPPortID: IBM.2107-75KX511:565
+Link Destination Address: 000235
+Attached ESS: IBM.2107-75KX511
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:789] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:79"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:790] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:812] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7a, peerID: 7970c933:79, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:812] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:813] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7b, peerID: 7970c933:7c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:862] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:865] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7c, peerID: 7970c933:7b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:874] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7b, peerID: 7970c933:7c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:874] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7b"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:876] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:909] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7c, peerID: 7970c933:7b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:909] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:910] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7d, peerID: 7970c933:7e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:940] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:945] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7e, peerID: 7970c933:7d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:13:946] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7d, peerID: 7970c933:7e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:13:946] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7d"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:14:0] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:14:7] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7e, peerID: 7970c933:7d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):Successful: true; Return code: 0Candidate connection result: FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:49
+Attached Port: NIFCPPortID: IBM.2107-75KX511:258
+Link Destination Address: 000102
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:769
+Attached Port: NIFCPPortID: IBM.2107-75KX511:561
+Link Destination Address: 000231
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:258
+Attached Port: NIFCPPortID: IBM.2107-75KX511:49
+Link Destination Address: 0031
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:775
+Attached Port: NIFCPPortID: IBM.2107-75KX511:565
+Link Destination Address: 0
+00235
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:55
+Attached Port: NIFCPPortID: IBM.2107-75KX511:263
+Link Destination Address: 000107
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:263
+Attached Port: NIFCPPortID: IBM.2107-75KX511:55
+Link Destination Address: 0037
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:561
+Attached Port: NIFCPPortID: IBM.2107-75KX511:769
+Link Destination Address: 000301
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:565
+Attached Port: NIFCPPortID: IBM.2107-75KX511:775
+Link Destination Address: 000307
+Attached ESS: IBM.2107-75KX511
+"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:14:7] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:14:69] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@76d076d0"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:14:269] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@5a385a38"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:24:270] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@20862086"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:24:480] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@6c0c6c0c"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:34:484] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@24522452"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:34:682] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@68ba68ba"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:44:687] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@22042204"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:44:880] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@7e907e90"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:11:54:882] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@6b886b88"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:11:55:81] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@77287728"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:05:85] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@793a793a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:05:282] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@2b742b74"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:11:965] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:7f, peerID: 7970c933:80, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:11:998] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:7f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:35] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:7f, peerID: 7970c933:80, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:35] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:7f"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:36] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:80, peerID: 7970c933:7f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:64] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:80"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:70] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:80, peerID: 7970c933:7f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:70] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:80"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:72] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:81, peerID: 7970c933:82, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:114] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:81"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:120] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:82, peerID: 7970c933:81, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:125] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:81, peerID: 7970c933:82, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:125] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:81"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:126] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:82"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:156] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:82, peerID: 7970c933:81, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:156] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:82"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:158] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:83, peerID: 7970c933:84, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:189] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:83"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:196] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:83, peerID: 7970c933:84, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:196] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:83"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:196] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:84, peerID: 7970c933:83, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:241] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:84"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:247] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:84, peerID: 7970c933:83, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:247] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:84"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:249] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:85, peerID: 7970c933:86, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:283] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:85"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:284] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:86, peerID: 7970c933:85, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:290] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:85, peerID: 7970c933:86, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:290] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:85"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:291] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:86"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:340] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:86, peerID: 7970c933:85, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:340] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:86"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:341] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:87, peerID: 7970c933:88, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:370] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:87"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:376] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:87, peerID: 7970c933:88, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:376] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:87"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:376] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:88, peerID: 7970c933:87, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:408] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:88"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:415] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:88, peerID: 7970c933:87, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:415] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:88"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:417] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:89, peerID: 7970c933:8a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:447] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:89"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:453] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:89, peerID: 7970c933:8a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:453] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:89"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:453] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: id: 7970c933:8a, peerID: 7970c933:89, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):null"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:480] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: NIACKCommunication: 7970c933:8a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:12:487] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: id: 7970c933:8a, peerID: 7970c933:89, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:12:487] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: NIACKCommunication: 7970c933:8a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:15:287] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@70d070d0"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:15:484] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@51e851e8"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:25:485] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@fb20fb2"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:25:687] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@61e861e8"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:35:694] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@501a501a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:35:888] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@60566056"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:45:889] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@27062706"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:46:89] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@32b832b8"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:12:56:96] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@20de20de"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:12:56:300] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@6ec46ec4"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:06:301] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@77667766"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:06:491] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@28ee28ee"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:16:496] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@5120512"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:16:693] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@7d327d32"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:26:696] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@61d461d4"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:26:894] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@37603760"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:36:896] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@6f806f80"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:37:95] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@ba00ba0"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:47:96] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@2b322b32"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:47:297] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@7bd47bd4"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:13:57:303] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@38de38de"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:13:57:497] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@1a0e1a0e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:07:506] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@4a9e4a9e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:07:699] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@103a103a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:17:700] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@584a584a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:17:900] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@64446444"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:27:904] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@3dfc3dfc"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:28:101] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@7e2a7e2a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:38:106] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@72d272d2"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:38:302] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@38a038a"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:48:306] "<eventInitiator(#1):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@840084"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:48:503] "<eventHandler(#1):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@668e668e"
+[DEBUG_GENERAL]       ni.communication.extensions.NIInitiator.send()
+ [2017/02/15 23:14:58:506] "<commandInitiator(#0):client #7970c933-->9.11.238.130> sending: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@44324432"
+[DEBUG_GENERAL]       ni.communication.extensions.NIHandler.run()
+ [2017/02/15 23:14:58:714] "<responseHandler(#0):client #7970c933-->9.11.238.130> received: com.ibm.storage.ess.ni.communication.extensions.NIHeartbeatCommunication@5c1a5c1a"

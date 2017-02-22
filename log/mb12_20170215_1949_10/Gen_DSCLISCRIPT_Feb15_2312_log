@@ -1,0 +1,200 @@
+
+mkflash  -dev IBM.2107-75KX511 -wait 8400-8401:8500-8501
+mkflash  -dev IBM.2107-75KX511 -wait 8400-8401:8500-8501
+lsextpool -dev IBM.2107-75KX511 
+mkflash -dev IBM.2107-75KX511  -record -persist 8400-8403:8500-8503
+lsflash -dev IBM.2107-75KX511 8400-8403:8500-8503
+rmflash -dev IBM.2107-75KX511  -quiet 8400-8403:8500-8503
+
+lsavailpprcport -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -remotewwnn 5005076308ffc599 84:85
+mkpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -remotewwnn 5005076308ffc599 -srclss 84 -tgtlss 85 -consistgrp I0031:I0102
+mkpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -remotewwnn 5005076308ffc599 -srclss 85 -tgtlss 84 -consistgrp I0031:I0102
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type gcp -mode full 8400-8403:8500-8503
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 8400-8403:8500-8503
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type mmir -mode nocp 8400-8403:8500-8503
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type mmir -mode nocp -cascade 8500-8503:8404-8407
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 8400-8403:8500-8503
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 8500-8503:8404-8407
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -wait -mode full -type mmir 8400-8401:8500-8501
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 8400-8401:8500-8501
+
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type gcp -mode full 8400-8403:8500-8503
+mkremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 -tgtinhibit -record -persist -nocp 8500-8503:8404-8407
+lsremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503:8404-8407
+setflashrevertible -dev IBM.2107-75KX511 8500-8503:8404-8407
+commitflash -dev IBM.2107-75KX511 8500-8503
+setflashrevertible -dev IBM.2107-75KX511 8500-8503:8404-8407
+revertflash -dev IBM.2107-75KX511 8500-8503
+setremoteflashrevertible -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503:8404-8407
+commitremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503
+setremoteflashrevertible -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503:8404-8407
+revertremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503
+lsremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 8500-8503:8404-8407
+rmflash -quiet -dev IBM.2107-75KX511 8500-8503:8404-8407
+mkremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/84 -tgtinhibit -record -persist -nocp 8500-8503:8404-8407
+
+mksession -dev IBM.2107-75KX511  -lss 84 1
+chsession -dev IBM.2107-75KX511  -lss 84 -action add -volume 8400-8403 1
+lssession -dev IBM.2107-75KX511  -l 84
+mkgmir -dev IBM.2107-75KX511  -lss 84 -session  1
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+showgmir -dev IBM.2107-75KX511 -session  1 84
+lsgmir -dev IBM.2107-75KX511 84
+showgmiroos -dev IBM.2107-75KX511 -lss 84 -scope si 1
+pausegmir -dev IBM.2107-75KX511  -lss 84 -session 1
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+showgmir -dev IBM.2107-75KX511 -session  1 84
+resumegmir -dev IBM.2107-75KX511 -lss 84 -session 1
+showgmir -dev IBM.2107-75KX511 -session  1  -metrics 84
+rmgmir -dev IBM.2107-75KX511 -quiet -lss 84 -session 1
+chsession -dev IBM.2107-75KX511 -lss 84  -action remove -volume 8400-8403 1
+rmsession -dev IBM.2107-75KX511 -quiet -lss 84 1
+lssession -dev IBM.2107-75KX511 -l 84 
+
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet 8400-8403:8500-8503
+rmpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet -remotewwnn 5005076308ffc599 84:85
+rmpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet -remotewwnn 5005076308ffc599 85:84
+rmflash -dev IBM.2107-75KX511 -quiet 8500-8503:8404-8407
+
+mkflash  -dev IBM.2107-75KX511 -wait 1c00-1c01:1d00-1d01
+lsextpool -dev IBM.2107-75KX511 
+mkflash -dev IBM.2107-75KX511  -record -persist 1c00-1c03:1d00-1d03
+lsflash -dev IBM.2107-75KX511 1c00-1c03:1d00-1d03
+rmflash -dev IBM.2107-75KX511  -quiet 1c00-1c03:1d00-1d03
+
+lsavailpprcport -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -remotewwnn 5005076308ffc599 1c:1d
+mkpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -remotewwnn 5005076308ffc599 -srclss 1c -tgtlss 1d -consistgrp I0031:I0102
+mkpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -remotewwnn 5005076308ffc599 -srclss 1d -tgtlss 1c -consistgrp I0031:I0102
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type gcp -mode full 1c00-1c03:1d00-1d03
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 1c00-1c03:1d00-1d03
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type mmir -mode nocp 1c00-1c03:1d00-1d03
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type mmir -mode nocp -cascade 1d00-1d03:1c04-1c07
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 1c00-1c03:1d00-1d03
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 1d00-1d03:1c04-1c07
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -wait -mode full -type mmir 1c00-1c01:1d00-1d01
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -quiet 1c00-1c01:1d00-1d01
+
+mkpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511  -type gcp -mode full 1c00-1c03:1d00-1d03
+mkremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c -tgtinhibit -record -persist -nocp 1d00-1d03:1c04-1c07
+lsremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03:1c04-1c07
+setflashrevertible -dev IBM.2107-75KX511 1d00-1d03:1c04-1c07
+commitflash -dev IBM.2107-75KX511 1d00-1d03
+setflashrevertible -dev IBM.2107-75KX511 1d00-1d03:1c04-1c07
+revertflash -dev IBM.2107-75KX511 1d00-1d03
+setremoteflashrevertible -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03:1c04-1c07
+commitremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03
+setremoteflashrevertible -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03:1c04-1c07
+revertremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03
+lsremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c 1d00-1d03:1c04-1c07
+rmflash -quiet -dev IBM.2107-75KX511 1d00-1d03:1c04-1c07
+mkremoteflash -dev IBM.2107-75KX511 -conduit IBM.2107-75KX511/1c -tgtinhibit -record -persist -nocp 1d00-1d03:1c04-1c07
+
+mksession -dev IBM.2107-75KX511  -lss 1c 1
+chsession -dev IBM.2107-75KX511  -lss 1c -action add -volume 1c00-1c03 1
+lssession -dev IBM.2107-75KX511  -l 1c
+mkgmir -dev IBM.2107-75KX511  -lss 1c -session  1
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+showgmir -dev IBM.2107-75KX511 -session  1 1c
+lsgmir -dev IBM.2107-75KX511 1c
+showgmiroos -dev IBM.2107-75KX511 -lss 1c -scope si 1
+pausegmir -dev IBM.2107-75KX511  -lss 1c -session 1
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 
+showgmir -dev IBM.2107-75KX511 -session  1  1c
+resumegmir -dev IBM.2107-75KX511 -lss 1c -session 1
+showgmir -dev IBM.2107-75KX511 -session  1  -metrics 1c
+rmgmir -dev IBM.2107-75KX511 -quiet -lss 1c -session 1
+chsession -dev IBM.2107-75KX511 -lss 1c  -action remove -volume 1c00-1c03 1
+rmsession -dev IBM.2107-75KX511 -quiet -lss 1c 1
+lssession -dev IBM.2107-75KX511 -l 1c 
+
+rmpprc -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet 1c00-1c03:1d00-1d03
+rmpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet -remotewwnn 5005076308ffc599 1c:1d
+rmpprcpath -dev IBM.2107-75KX511 -remotedev IBM.2107-75KX511 -quiet -remotewwnn 5005076308ffc599 1d:1c
+rmflash -dev IBM.2107-75KX511 -quiet 1d00-1d03:1c04-1c07
+
+rmfbvol -dev IBM.2107-75KX511 -quiet 1c00-1c03
+rmfbvol -dev IBM.2107-75KX511 -quiet 1c04-1c07
+rmfbvol -dev IBM.2107-75KX511 -quiet 1d00-1d03
+
+rmckdvol -dev IBM.2107-75KX511 -quiet 8400-8403
+rmckdvol -dev IBM.2107-75KX511 -quiet 8500-8503
+rmckdvol -dev IBM.2107-75KX511 -quiet 8404-8407
+rmckdvol -dev IBM.2107-75KX511 -quiet 8504-8507
+rmlcu -dev IBM.2107-75KX511 -quiet 84
+rmlcu -dev IBM.2107-75KX511 -quiet 85

@@ -1,0 +1,199 @@
+
+
+*****************************************************************
+Connecting to mb12h.tuc.stglabs.ibm.com,port 12301
+*****************************************************************
+
+
+
+*****************************************************************
+Telnet to mb12h.tuc.stglabs.ibm.com successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Checking which CEC owns the VRA adapter
+*****************************************************************
+
+SF75KX510ESS01 # date;davra -Q SISHARVEST -q WARHAWKS bUseCache=FALSE
+Wed Feb 15 21:57:09 MST 2017
+Number of VRSA adapters=2
+Number of VRSA enclosures=2
+  Adapter   EncID   EncType  LSesWwn            RSesWwn            nodeAffinity  adapterWwn
+  vra037    XXX     ??       FFFFFFFFFFFFFFFF   FFFFFFFFFFFFFFFF   1             5005076070404B00
+  vra026    0A0     TP       500507680956A63D   500507680956A67D   0             5005076070407F00
+  vra026    0A1     TP       500507680950A3BD   500507680950A3FD   0             5005076070407F00
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Check DS8K machine status before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 21:57:09 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Unknown
+  LocPhase = 0x1A00
+  RemPhase = 0x1A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of DA adapters before test starts
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssDA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssDA
+Wed Feb 15 21:57:10 MST 2017
+Resource Persistent Attributes for IBM.EssDA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all DA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="vra026"' IBM.EssDA applicationLevelDeactivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="vra026"' IBM.EssDA applicationLevelDeactivateRepair;echo "exitcode:$?"
+Wed Feb 15 21:57:10 MST 2017
+Resource Action Response for applicationLevelDeactivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="vra026"' IBM.EssDA systemLevelActivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="vra026"' IBM.EssDA systemLevelActivateRepair;echo "exitcode:$?"
+Wed Feb 15 21:58:14 MST 2017
+Resource Action Response for systemLevelActivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="vra026"' IBM.EssDA systemLevelVerifyRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="vra026"' IBM.EssDA systemLevelVerifyRepair;echo "exitcode:$?"
+Wed Feb 15 22:03:14 MST 2017
+Resource Action Response for systemLevelVerifyRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="vra026"' IBM.EssDA applicationLevelActivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="vra026"' IBM.EssDA applicationLevelActivateRepair;echo "exitcode:$?"
+Wed Feb 15 22:11:26 MST 2017
+Resource Action Response for applicationLevelActivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of DA adapters after test completes
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssDA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssDA
+Wed Feb 15 22:13:42 MST 2017
+Resource Persistent Attributes for IBM.EssDA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all DA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status after test completes
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 22:13:42 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Unknown
+  LocPhase = 0x1A00
+  RemPhase = 0x1A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Test Passed!
+*****************************************************************
+

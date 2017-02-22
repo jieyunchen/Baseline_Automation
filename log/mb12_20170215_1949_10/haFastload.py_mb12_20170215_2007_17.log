@@ -1,0 +1,247 @@
+
+
+*****************************************************************
+Connecting to mb12h.tuc.stglabs.ibm.com,port 12301
+*****************************************************************
+
+
+
+*****************************************************************
+Telnet to mb12h.tuc.stglabs.ibm.com successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:13:35 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsdev -Cc adapter | grep 'cpssfc[0-9]\{3\} '
+*****************************************************************
+
+SF75KX510ESS01 # date; lsdev -Cc adapter | grep 'cpssfc[0-9]\{3\} '
+Wed Feb 15 20:13:35 MST 2017
+cpssfc003  Available 02-00-03 IBM Hankie FC adapter
+cpssfc010  Available 02-01-00 IBM Hankie FC adapter
+cpssfc023  Available 02-02-03 IBM Hankie FC adapter
+cpssfc030  Available 02-03-00 IBM Hankie FC adapter
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Check HA adapter status before running HA fastload
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:13:35 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Executing comand: cpssflupdate -l cpssfc003
+*****************************************************************
+
+SF75KX510ESS01 # date; cpssflupdate -l cpssfc003;echo "exitcode:$?"
+Wed Feb 15 20:13:36 MST 2017
+20:13:36 2017/02/15: cpssflupdate: Sending ioctl to SMP, command OS_BEGIN_FASTLOAD for adapter cpssfc003
+ 20:13:37 2017/02/15: cpssflupdate: Returned from SMP ioctl, command OS_BEGIN_FASTLOAD rc = 0
+ cpssflupdate: Fastload for adapter cpssfc003 is DONE.....
+ exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+HA fastload running on adapter cpssfc003 completed successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check HA adapter status before running HA fastload
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:14:37 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Executing comand: cpssflupdate -l cpssfc010
+*****************************************************************
+
+SF75KX510ESS01 # date; cpssflupdate -l cpssfc010;echo "exitcode:$?"
+Wed Feb 15 20:14:38 MST 2017
+20:14:38 2017/02/15: cpssflupdate: Sending ioctl to SMP, command OS_BEGIN_FASTLOAD for adapter cpssfc010
+ 20:14:39 2017/02/15: cpssflupdate: Returned from SMP ioctl, command OS_BEGIN_FASTLOAD rc = 0
+ cpssflupdate: Fastload for adapter cpssfc010 is DONE.....
+ exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+HA fastload running on adapter cpssfc010 completed successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check HA adapter status before running HA fastload
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:15:39 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Executing comand: cpssflupdate -l cpssfc023
+*****************************************************************
+
+SF75KX510ESS01 # date; cpssflupdate -l cpssfc023;echo "exitcode:$?"
+Wed Feb 15 20:15:40 MST 2017
+20:15:40 2017/02/15: cpssflupdate: Sending ioctl to SMP, command OS_BEGIN_FASTLOAD for adapter cpssfc023
+ 20:15:41 2017/02/15: cpssflupdate: Returned from SMP ioctl, command OS_BEGIN_FASTLOAD rc = 0
+ cpssflupdate: Fastload for adapter cpssfc023 is DONE.....
+ exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+HA fastload running on adapter cpssfc023 completed successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check HA adapter status before running HA fastload
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:16:41 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Executing comand: cpssflupdate -l cpssfc030
+*****************************************************************
+
+SF75KX510ESS01 # date; cpssflupdate -l cpssfc030;echo "exitcode:$?"
+Wed Feb 15 20:16:42 MST 2017
+20:16:42 2017/02/15: cpssflupdate: Sending ioctl to SMP, command OS_BEGIN_FASTLOAD for adapter cpssfc030
+ 20:16:43 2017/02/15: cpssflupdate: Returned from SMP ioctl, command OS_BEGIN_FASTLOAD rc = 0
+ cpssflupdate: Fastload for adapter cpssfc030 is DONE.....
+ exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+HA fastload running on adapter cpssfc030 completed successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check HA adapters after test completed
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:17:43 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all HA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status after test completed
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:17:44 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Test Passed!
+*****************************************************************
+

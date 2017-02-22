@@ -1,0 +1,1891 @@
+[DEBUG_GENERAL]       ni.application.NIServices.setSSLv3()
+ [2017/02/15 23:11:01:792] "System Property com.ibm.jsse2.disableSSLv3=null"
+[DEBUG_GENERAL]       ni.application.NIServices.connect()
+ [2017/02/15 23:11:01:792] "Attempting to connect to a 2107+ server."
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.attemptConnect()
+ [2017/02/15 23:11:01:822] "<client #[main@106432088]> connect called, we have HMC addresses: [mb12h/9.11.238.130, null]"
+[DEBUG_GENERAL]       ni.communication.connection.NISSLConnectionFactory.enableAlgorithmsFor1750()
+ [2017/02/15 23:11:01:890] "Security Property jdk.tls.disabledAlgorithms=null"
+[DEBUG_GENERAL]       ni.communication.connection.NISSLConnectionFactory.enableAlgorithmsFor1750()
+ [2017/02/15 23:11:01:890] "Security Property jdk.certpath.disabledAlgorithms=null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.transition()
+ [2017/02/15 23:11:02:541] "<client #[main@106432088]-->9.11.238.130> transition from DISCONNECTED_STATE to CONNECTING_COMMANDS_STATE"
+[DEBUG_GENERAL]       ni.security.common.NISecurityUtil.getCiphersuitConfigFilePath()
+ [2017/02/15 23:11:02:726] "The cipher suites configuration file path: /opt/ibm/dscli/lib/ciphersuitsconfig.xml is invalid. Try to find it in the user home directory."
+[DEBUG_GENERAL]       ni.security.common.NISecurityUtil.getCiphersuitConfigFilePath()
+ [2017/02/15 23:11:02:726] "The cipher suites configuration file path: /home/root/essni/ciphersuitsconfig.xml is also invalid."
+[DEBUG_GENERAL]       ni.security.common.NISecurityUtil.getLegacyCipherSuits()
+ [2017/02/15 23:11:02:726] "Unable to locate valid Cipher suit setting file, use default legacy cipher suit instead."
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.establishCommandConnection()
+ [2017/02/15 23:11:02:727] "<client #[main@106432088]-->9.11.238.130> established socket from /9.11.194.146 to 9.11.238.130 on Port 1751"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:03:664] "<client #[main@106432088]-->9.11.238.130> Server Version = NIConnectionCommunication.VERSION_ACK_ALL_CMD_SERVER (LATEST_CLIENT_VERSION)"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:03:664] "[Update Label] Old: <client #[main@106432088]-->9.11.238.130> ;  New: <client #7970c933-->9.11.238.130> "
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.transition()
+ [2017/02/15 23:11:03:664] "<client #7970c933-->9.11.238.130> transition from CONNECTING_COMMANDS_STATE to CONNECTING_EVENTS_STATE"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.transition()
+ [2017/02/15 23:11:04:61] "<client #7970c933-->9.11.238.130> transition from CONNECTING_EVENTS_STATE to CONNECTED_STATE"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.changeStatus()
+ [2017/02/15 23:11:04:63] "<client #7970c933-->9.11.238.130> changing status from STATUS_DOWN to STATUS_UP"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.attemptConnect()
+ [2017/02/15 23:11:04:63] "<client #7970c933> No channels are established to local host: OLC not supported on this connection."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:04:76] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:0, Dest: (null), NIConnectionTypeQuery: Connection type = UNKNOWN(-1))"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:04:146] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:0"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:04:219] "<client #7970c933> Received response: id: 7970c933:0, Dest: (HMC1, 4), NIConnectionTypeQuery: Connection type = NIServices.CONNECTION_TYPE_2107(3))"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:04:219] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:0-->valid response)], it costs 73 milliseconds."
+[DEBUG_GENERAL]       ni.client.extensions.services.event.NIEventServiceImpl.addListener()
+ [2017/02/15 23:11:04:232] "Adding listener interface com.ibm.storage.ess.ni.application.event.extensions.NIPeerSetEventListener for listener com.ibm.storage.ess.ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl@1c1c1c1c"
+[DEBUG_GENERAL]       ni.client.extensions.services.event.NIEventServiceImpl.addListener()
+ [2017/02/15 23:11:04:403] "Adding listener interface com.ibm.storage.ess.ni.application.event.extensions.NIPeerDeletedEventListener for listener com.ibm.storage.ess.ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl@1c1c1c1c"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:04:419] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1, Src: (null), Dest: (HMC, 2), NIEventServer.setSubscriber(7970c933, {Event: NIPeerSetEventImpl Date: 2017/02/15 23:11:04.385, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:110 [ null ], Event: NIPeerDeletedEventImpl Date: 2017/02/15 23:11:04.386, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:111 [ null ]}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:04:431] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:04:475] "<client #7970c933> Received response: id: 7970c933:1, Src: (HMC, 2), Dest: (HMC1, 4), NIEventServer.setSubscriber(7970c933, {Event: NIPeerSetEventImpl Date: 2017/02/15 23:11:04.385, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:110 [ null ], Event: NIPeerDeletedEventImpl Date: 2017/02/15 23:11:04.386, Time Zone: America/Phoenix, Offset: -7 hr 0 min eid: <null>:111 [ null ]}):true"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:04:477] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:1-->valid response),(7970c933:2-->no response)], it costs 46 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:04:481] "<client #7970c933-->9.11.238.130> sending (attempt 0): NIGetStoragePlexIDCommand (null:null): null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:04:492] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:04:513] "<client #7970c933> Received response: NIGetStoragePlexIDCommand (HMC1, 4:null): 8100LI7*P216833"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:04:513] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:3-->valid response)], it costs 20 milliseconds."
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.connect()
+ [2017/02/15 23:11:04:513] "<client #7970c933> Connection Complete.  Result = NIServices.CONNECTION_ESTABLISHED_WITH_ONE_SERVER_ONLY"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.checkConnection()
+ [2017/02/15 23:11:04:780] "<client #7970c933-->9.11.238.130> checkConnection called, connection state = CONNECTED_STATE"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:04:781] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4, Src: (null), Dest: (HMC, 2), NIDomainService.getESSs():null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:04:859] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:95] "<client #7970c933> Received response: id: 7970c933:4, Src: (HMC, 2), Dest: (HMC1, 4), NIDomainService.getESSs():Successful: true; Return code: 0; Resource: [NIESS: [id = IBM.2107-75KX511, userName = , userDescription = BLsi, essNetCSEnabled = true, limitEssNetCS = false, allowedEssNetCS = IBM.2107-75KX511/V0, requestedState = NIESSStateOnline, state = NIESSStateOnline, model = 986, iSeriesSN = 599, nvsMemory = 16384, cacheMemory = 222496, processorMemory = 257536, isHostPrecheckEnabled = true, bundleVersion = 88.22.22.0, smartTierMode = 2, smartTierMonitoringMode = 1, ioPriorityManagementMode = 1, tritonMode = 0, etMirrorCoordinationMode = 2, ssdRaid10ArraySwitchStatus = 1, nearlineRaid10ArraySwitchStatus = 1, ssdRaid6ArraySwitchStatus = 1, numEncryptionGroupsSupported = 1, spaceReservationMode = 2, allocationOrderMode = 1, pidMCH = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCZS = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCBC = {N/A,N/A,N/A,N/A,N/A,N/A,}pidMCBCA = {N/A,N/A,N/A,N/A,N/A,N/A,}encryptionGroups
+States = { 3, 3 }, encryptionGroupsLastSuccessfulPKR = { { N/A }, { N/A }, { N/A }, { N/A } }, encryptionGroupsLastFailedPKR = { { N/A }, { N/A }, { N/A }, { N/A } }, raid5ArrayLargeCapacitySwitchStatus = 1 ] ]"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:111] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:4-->valid response)], it costs 251 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:113] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5, peerID: 7970c933:6, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:259] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:262] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6, peerID: 7970c933:5, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:302] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:338] "<client #7970c933> Received response: id: 7970c933:5, peerID: 7970c933:6, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIArraySiteImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:358] "<client #7970c933> Received response: id: 7970c933:6, peerID: 7970c933:5, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArraySites(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:359] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:5-->valid response),(7970c933:6-->valid response)], it costs 33 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:376] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7, peerID: 7970c933:8, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:428] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:445] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:8, peerID: 7970c933:7, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:452] "<client #7970c933> Received response: id: 7970c933:7, peerID: 7970c933:8, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:453] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:8"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:552] "<client #7970c933> Received response: id: 7970c933:8, peerID: 7970c933:7, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/ff, NISessionID [type = 40, number = 1]):Result of x51 query: 
+Async PPRC Status flags: 80
+Number of Data bytes: 4
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:553] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:7-->valid response),(7970c933:8-->valid response)], it costs 100 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:563] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:9, peerID: 7970c933:a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:624] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:9"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:624] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:a, peerID: 7970c933:9, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:658] "<client #7970c933> Received response: id: 7970c933:9, peerID: 7970c933:a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:659] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:717] "<client #7970c933> Received response: id: 7970c933:a, peerID: 7970c933:9, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:718] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:9-->valid response),(7970c933:a-->valid response)], it costs 56 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:720] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:b, peerID: 7970c933:c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:767] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:b"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:786] "<client #7970c933> Received response: id: 7970c933:b, peerID: 7970c933:c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:778] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:c, peerID: 7970c933:b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:832] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:852] "<client #7970c933> Received response: id: 7970c933:c, peerID: 7970c933:b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1b, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:853] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:b-->valid response),(7970c933:c-->valid response)], it costs 15 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:854] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:d, peerID: 7970c933:e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:859] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:861] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:e, peerID: 7970c933:d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:900] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:913] "<client #7970c933> Received response: id: 7970c933:d, peerID: 7970c933:e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:938] "<client #7970c933> Received response: id: 7970c933:e, peerID: 7970c933:d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/1a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:05:939] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:d-->valid response),(7970c933:e-->valid response)], it costs 33 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:940] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:f, peerID: 7970c933:10, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:05:972] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:f"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:05:984] "<client #7970c933> Received response: id: 7970c933:f, peerID: 7970c933:10, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:05:984] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:10, peerID: 7970c933:f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:13] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:10"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:31] "<client #7970c933> Received response: id: 7970c933:10, peerID: 7970c933:f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/26, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:32] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:f-->valid response),(7970c933:10-->valid response)], it costs 0 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:34] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:11, peerID: 7970c933:12, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:62] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:11"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:73] "<client #7970c933> Received response: id: 7970c933:11, peerID: 7970c933:12, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:74] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:12, peerID: 7970c933:11, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:108] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:12"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:119] "<client #7970c933> Received response: id: 7970c933:12, peerID: 7970c933:11, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/25, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:120] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:11-->valid response),(7970c933:12-->valid response)], it costs 0 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:121] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:13, peerID: 7970c933:14, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:152] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:13"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:159] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:14, peerID: 7970c933:13, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:169] "<client #7970c933> Received response: id: 7970c933:13, peerID: 7970c933:14, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:170] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:14"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:195] "<client #7970c933> Received response: id: 7970c933:14, peerID: 7970c933:13, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/24, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:195] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:13-->valid response),(7970c933:14-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:196] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:15, peerID: 7970c933:16, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:223] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:15"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:233] "<client #7970c933> Received response: id: 7970c933:15, peerID: 7970c933:16, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:233] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:16, peerID: 7970c933:15, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:261] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:16"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:308] "<client #7970c933> Received response: id: 7970c933:16, peerID: 7970c933:15, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/23, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:308] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:15-->valid response),(7970c933:16-->valid response)], it costs 47 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:309] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:17, peerID: 7970c933:18, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:339] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:17"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:346] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:18, peerID: 7970c933:17, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:355] "<client #7970c933> Received response: id: 7970c933:17, peerID: 7970c933:18, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:356] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:18"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:381] "<client #7970c933> Received response: id: 7970c933:18, peerID: 7970c933:17, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/22, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:381] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:17-->valid response),(7970c933:18-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:382] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:19, peerID: 7970c933:1a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:408] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:19"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:416] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1a, peerID: 7970c933:19, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:422] "<client #7970c933> Received response: id: 7970c933:19, peerID: 7970c933:1a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:423] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:460] "<client #7970c933> Received response: id: 7970c933:1a, peerID: 7970c933:19, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/21, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:465] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:19-->valid response),(7970c933:1a-->valid response)], it costs 42 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:466] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1b, peerID: 7970c933:1c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:496] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:497] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1c, peerID: 7970c933:1b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:550] "<client #7970c933> Received response: id: 7970c933:1b, peerID: 7970c933:1c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:550] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:559] "<client #7970c933> Received response: id: 7970c933:1c, peerID: 7970c933:1b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/20, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:560] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:1b-->valid response),(7970c933:1c-->valid response)], it costs 2 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:560] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1d, peerID: 7970c933:1e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:591] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:606] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1e, peerID: 7970c933:1d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:609] "<client #7970c933> Received response: id: 7970c933:1d, peerID: 7970c933:1e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:609] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:640] "<client #7970c933> Received response: id: 7970c933:1e, peerID: 7970c933:1d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/18, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:641] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:1d-->valid response),(7970c933:1e-->valid response)], it costs 31 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:642] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:1f, peerID: 7970c933:20, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:667] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:1f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:667] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:20, peerID: 7970c933:1f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:683] "<client #7970c933> Received response: id: 7970c933:1f, peerID: 7970c933:20, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:684] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:20"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:709] "<client #7970c933> Received response: id: 7970c933:20, peerID: 7970c933:1f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/15, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:709] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:1f-->valid response),(7970c933:20-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:710] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:21, peerID: 7970c933:22, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:740] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:21"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:752] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:22, peerID: 7970c933:21, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:769] "<client #7970c933> Received response: id: 7970c933:21, peerID: 7970c933:22, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:770] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:22"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:807] "<client #7970c933> Received response: id: 7970c933:22, peerID: 7970c933:21, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/16, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:807] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:21-->valid response),(7970c933:22-->valid response)], it costs 36 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:808] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:23, peerID: 7970c933:24, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:838] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:23"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:854] "<client #7970c933> Received response: id: 7970c933:23, peerID: 7970c933:24, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:854] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:24, peerID: 7970c933:23, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:862] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:24"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:888] "<client #7970c933> Received response: id: 7970c933:24, peerID: 7970c933:23, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/14, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:894] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:23-->valid response),(7970c933:24-->valid response)], it costs 30 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:895] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:25, peerID: 7970c933:26, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:922] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:25"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:922] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:26, peerID: 7970c933:25, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:935] "<client #7970c933> Received response: id: 7970c933:25, peerID: 7970c933:26, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:936] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:26"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:06:960] "<client #7970c933> Received response: id: 7970c933:26, peerID: 7970c933:25, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/13, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:06:961] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:25-->valid response),(7970c933:26-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:961] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:27, peerID: 7970c933:28, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:06:993] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:27"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:06:995] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:28, peerID: 7970c933:27, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:8] "<client #7970c933> Received response: id: 7970c933:27, peerID: 7970c933:28, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:9] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:28"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:30] "<client #7970c933> Received response: id: 7970c933:28, peerID: 7970c933:27, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/10, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:31] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:27-->valid response),(7970c933:28-->valid response)], it costs 20 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:31] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:29, peerID: 7970c933:2a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:58] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:29"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:60] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2a, peerID: 7970c933:29, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:74] "<client #7970c933> Received response: id: 7970c933:29, peerID: 7970c933:2a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:75] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:100] "<client #7970c933> Received response: id: 7970c933:2a, peerID: 7970c933:29, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/11, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:101] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:29-->valid response),(7970c933:2a-->valid response)], it costs 26 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:102] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2b, peerID: 7970c933:2c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:133] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:135] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2c, peerID: 7970c933:2b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:148] "<client #7970c933> Received response: id: 7970c933:2b, peerID: 7970c933:2c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:149] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:175] "<client #7970c933> Received response: id: 7970c933:2c, peerID: 7970c933:2b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/81, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:175] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:2b-->valid response),(7970c933:2c-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:176] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2d, peerID: 7970c933:2e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:206] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:206] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2e, peerID: 7970c933:2d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:220] "<client #7970c933> Received response: id: 7970c933:2d, peerID: 7970c933:2e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:220] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:240] "<client #7970c933> Received response: id: 7970c933:2e, peerID: 7970c933:2d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/80, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:240] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:2d-->valid response),(7970c933:2e-->valid response)], it costs 20 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:241] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:2f, peerID: 7970c933:30, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:260] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:2f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:260] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:30, peerID: 7970c933:2f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:299] "<client #7970c933> Received response: id: 7970c933:2f, peerID: 7970c933:30, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:299] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:30"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:321] "<client #7970c933> Received response: id: 7970c933:30, peerID: 7970c933:2f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0f, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:321] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:2f-->valid response),(7970c933:30-->valid response)], it costs 22 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:322] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:31, peerID: 7970c933:32, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:352] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:31"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:352] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:32, peerID: 7970c933:31, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:366] "<client #7970c933> Received response: id: 7970c933:31, peerID: 7970c933:32, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:366] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:32"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:387] "<client #7970c933> Received response: id: 7970c933:32, peerID: 7970c933:31, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0a, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:387] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:31-->valid response),(7970c933:32-->valid response)], it costs 20 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:387] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:33, peerID: 7970c933:34, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:414] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:33"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:414] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:34, peerID: 7970c933:33, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:426] "<client #7970c933> Received response: id: 7970c933:33, peerID: 7970c933:34, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:427] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:34"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:451] "<client #7970c933> Received response: id: 7970c933:34, peerID: 7970c933:33, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/07, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:452] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:33-->valid response),(7970c933:34-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:453] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:35, peerID: 7970c933:36, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:459] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:35"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:459] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:36, peerID: 7970c933:35, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:487] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:36"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:505] "<client #7970c933> Received response: id: 7970c933:35, peerID: 7970c933:36, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:514] "<client #7970c933> Received response: id: 7970c933:36, peerID: 7970c933:35, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/06, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:514] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:35-->valid response),(7970c933:36-->valid response)], it costs 26 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:515] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:37, peerID: 7970c933:38, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:546] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:37"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:546] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:38, peerID: 7970c933:37, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:563] "<client #7970c933> Received response: id: 7970c933:37, peerID: 7970c933:38, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:563] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:38"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:579] "<client #7970c933> Received response: id: 7970c933:38, peerID: 7970c933:37, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/04, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:579] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:37-->valid response),(7970c933:38-->valid response)], it costs 16 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:580] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:39, peerID: 7970c933:3a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:606] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:39"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:606] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3a, peerID: 7970c933:39, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:619] "<client #7970c933> Received response: id: 7970c933:39, peerID: 7970c933:3a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:619] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:647] "<client #7970c933> Received response: id: 7970c933:3a, peerID: 7970c933:39, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/03, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:647] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:39-->valid response),(7970c933:3a-->valid response)], it costs 28 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:648] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3b, peerID: 7970c933:3c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:659] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:659] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3c, peerID: 7970c933:3b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:679] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:700] "<client #7970c933> Received response: id: 7970c933:3b, peerID: 7970c933:3c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:709] "<client #7970c933> Received response: id: 7970c933:3c, peerID: 7970c933:3b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/02, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:709] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:3b-->valid response),(7970c933:3c-->valid response)], it costs 26 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:710] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3d, peerID: 7970c933:3e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:737] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:738] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3e, peerID: 7970c933:3d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:750] "<client #7970c933> Received response: id: 7970c933:3d, peerID: 7970c933:3e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:751] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:786] "<client #7970c933> Received response: id: 7970c933:3e, peerID: 7970c933:3d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/01, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:786] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:3d-->valid response),(7970c933:3e-->valid response)], it costs 35 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:787] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:3f, peerID: 7970c933:40, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:821] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:3f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:824] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:40, peerID: 7970c933:3f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:835] "<client #7970c933> Received response: id: 7970c933:3f, peerID: 7970c933:40, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:836] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:40"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:858] "<client #7970c933> Received response: id: 7970c933:40, peerID: 7970c933:3f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/00, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:858] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:3f-->valid response),(7970c933:40-->valid response)], it costs 21 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:859] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:41, peerID: 7970c933:42, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:920] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:41"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:921] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:42, peerID: 7970c933:41, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:933] "<client #7970c933> Received response: id: 7970c933:41, peerID: 7970c933:42, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:934] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:42"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:07:958] "<client #7970c933> Received response: id: 7970c933:42, peerID: 7970c933:41, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/17, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:07:958] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:41-->valid response),(7970c933:42-->valid response)], it costs 24 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:959] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:43, peerID: 7970c933:44, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:07:989] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:43"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:07:989] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:44, peerID: 7970c933:43, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:2] "<client #7970c933> Received response: id: 7970c933:43, peerID: 7970c933:44, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:3] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:44"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:27] "<client #7970c933> Received response: id: 7970c933:44, peerID: 7970c933:43, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/19, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:27] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:43-->valid response),(7970c933:44-->valid response)], it costs 24 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:28] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:45, peerID: 7970c933:46, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:58] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:45"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:59] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:46, peerID: 7970c933:45, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:75] "<client #7970c933> Received response: id: 7970c933:45, peerID: 7970c933:46, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:75] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:46"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:126] "<client #7970c933> Received response: id: 7970c933:46, peerID: 7970c933:45, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/12, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:126] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:45-->valid response),(7970c933:46-->valid response)], it costs 51 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:127] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:47, peerID: 7970c933:48, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:156] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:47"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:157] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:48, peerID: 7970c933:47, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:170] "<client #7970c933> Received response: id: 7970c933:47, peerID: 7970c933:48, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:171] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:48"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:193] "<client #7970c933> Received response: id: 7970c933:48, peerID: 7970c933:47, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0e, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:193] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:47-->valid response),(7970c933:48-->valid response)], it costs 22 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:193] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:49, peerID: 7970c933:4a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:220] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:49"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:220] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4a, peerID: 7970c933:49, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:233] "<client #7970c933> Received response: id: 7970c933:49, peerID: 7970c933:4a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:233] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:263] "<client #7970c933> Received response: id: 7970c933:4a, peerID: 7970c933:49, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0d, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:263] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:49-->valid response),(7970c933:4a-->valid response)], it costs 30 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:264] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4b, peerID: 7970c933:4c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:296] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:299] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4c, peerID: 7970c933:4b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:311] "<client #7970c933> Received response: id: 7970c933:4b, peerID: 7970c933:4c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:311] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:334] "<client #7970c933> Received response: id: 7970c933:4c, peerID: 7970c933:4b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0c, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:334] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:4b-->valid response),(7970c933:4c-->valid response)], it costs 23 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:335] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4d, peerID: 7970c933:4e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:365] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:365] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4e, peerID: 7970c933:4d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:379] "<client #7970c933> Received response: id: 7970c933:4d, peerID: 7970c933:4e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:379] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:403] "<client #7970c933> Received response: id: 7970c933:4e, peerID: 7970c933:4d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/0b, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:403] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:4d-->valid response),(7970c933:4e-->valid response)], it costs 23 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:404] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:4f, peerID: 7970c933:50, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:435] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:4f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:435] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:50, peerID: 7970c933:4f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:448] "<client #7970c933> Received response: id: 7970c933:4f, peerID: 7970c933:50, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:448] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:50"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:474] "<client #7970c933> Received response: id: 7970c933:50, peerID: 7970c933:4f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/09, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:474] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:4f-->valid response),(7970c933:50-->valid response)], it costs 26 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:474] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:51, peerID: 7970c933:52, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:513] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:51"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:513] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:52, peerID: 7970c933:51, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:578] "<client #7970c933> Received response: id: 7970c933:51, peerID: 7970c933:52, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:578] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:52"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:588] "<client #7970c933> Received response: id: 7970c933:52, peerID: 7970c933:51, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/05, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 0
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:588] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:51-->valid response),(7970c933:52-->valid response)], it costs 9 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:589] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:53, peerID: 7970c933:54, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:637] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:53"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:639] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:54, peerID: 7970c933:53, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:663] "<client #7970c933> Received response: id: 7970c933:53, peerID: 7970c933:54, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):XDC Session and Device Status: 
+Successful: true; Return code: 0
+Number of Session in the LSS: 1
+
+XDC Session and Device Info: 
+Successful: true; Return code: 0
+NISessionID [type = 40, number = 12]
+Session Status: 0x2
+Number of Volumes in the Session: 64
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083e 
+NISessionID [type = 40, number = 12]
+Volume 
+Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondary
+FullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/083a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0
+839 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0838 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0837 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimple
+x: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0836 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0835 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: tr
+ue; Return code: 0 
+Volume ID: IBM.2107-75KX511/0834 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0833 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0832 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: f
+alse isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0831 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0830 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID
+: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false 
+isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended
+: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/082a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0829 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0828 
+NISessionID [type = 40, number = 
+12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0827 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0826 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false 
+isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0825 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0824 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.210
+7-75KX511/0823 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0822 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0821 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSeco
+ndarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0820 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Suc
+cessful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFu
+llDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/081a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondar
+y Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0819 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0818 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0817 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimp
+lex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0816 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0815 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSeconda
+rySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0814 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0813 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0812 
+NISessionID [type = 40
+, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0811 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0810 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPend
+ing: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080f 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080e 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume 
+ID: IBM.2107-75KX511/080d 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080c 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080b 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: fa
+lse 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/080a 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0809 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume
+ Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0808 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0807 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0806 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true 
+isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0805 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0804 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations:
+ 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0803 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0802 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0801 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+is
+PrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+XDC Session Volume Info: 
+Successful: true; Return code: 0 
+Volume ID: IBM.2107-75KX511/0800 
+NISessionID [type = 40, number = 12]
+Volume Status: 0x80 
+isPrimarySimplex: false isPrimaryCopyPending: true isPrimaryFullDuplex: false isPrimarySuspended: false 
+isSecondarySimplex: true isSecondaryCopyPending: false isSecondaryFullDuplex: false isSecondarySuspended: false 
+numberOfRelations: 0 secondary Volume ID: null 
+
+
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:664] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:54"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:721] "<client #7970c933> Received response: id: 7970c933:54, peerID: 7970c933:53, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryXDCSession(IBM.2107-75KX511/08, {}):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:721] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:53-->valid response),(7970c933:54-->valid response)], it costs 15 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:722] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:55, peerID: 7970c933:56, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:778] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:55"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:786] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:56, peerID: 7970c933:55, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:889] "<client #7970c933> Received response: id: 7970c933:55, peerID: 7970c933:56, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):Result of x51 query: 
+Async PPRC Status flags: 0
+Number of Data bytes: 170
+
+Number of Master ESSs: 1
+Master ESS Number:[0] 
+Master ESS Information: 
+Master ESS Data Valid: true
+NISessionID [type = 40, number = 12]
+Consistency State: 1
+CG Interval Time(sec.): 0
+Maximum Coordination Interval Time(msec.): 50
+Maximum CG Drain Time(sec.): 240
+Current Time: Wed Feb 15 23:17:26 MST 2017
+Fatal Reason Code: 0
+Last CGFormTIme: Wed Feb 15 23:17:25 MST 2017
+Flash Copy Sequence Number: 0x:58a543f5
+Unsuccessful CG form attempts since last success: 0
+Percent CG Forms that were successful: 99
+Number of successful CGs: 6791
+Master CU Sequence Number: KX511 Master Plant of Manfacture: 75 Master Control Unit Type: 2107
+Master LSS number: 8
+
+Number of Subordinate Associations: 0
+
+First CG Failure Info: NIAsyncPPRCCGFailureInfo
+Impl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+Previous CG Failure Info: NIAsyncPPRCCGFailureInfoImpl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+Most Recent CG Failure Info: NIAsyncPPRCCGFailureInfoImpl [masterESSSequenceNum = KX511, failingLSS = 8, masterState = 0x4, errorReason = 0xcc, plantOfManufacturing = 75, controlUnitType = 2107, status = 17]
+
+Number of Master/Subordinate Associations: 0
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:890] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:56"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:08:901] "<client #7970c933> Received response: id: 7970c933:56, peerID: 7970c933:55, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIAsyncPPRCService.queryAsyncPPRC(IBM.2107-75KX511/08):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:08:901] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:55-->valid response),(7970c933:56-->valid response)], it costs 5 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:904] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:57, peerID: 7970c933:58, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:08:976] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:57"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:08:976] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:58, peerID: 7970c933:57, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:5] "<client #7970c933> Received response: id: 7970c933:57, peerID: 7970c933:58, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):Successful: true; Return code: 0; Resource: 19 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:6] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:58"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:21] "<client #7970c933> Received response: id: 7970c933:58, peerID: 7970c933:57, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:21] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:57-->valid response),(7970c933:58-->valid response)], it costs 15 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:22] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:59, peerID: 7970c933:5a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:61] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:59"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:61] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5a, peerID: 7970c933:59, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:110] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:130] "<client #7970c933> Received response: id: 7970c933:59, peerID: 7970c933:5a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIAddressGroup: [id = IBM.2107-75KX511/2, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 8192, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 7, numConfiguredVolumes = 448], NIAddressGroup: [id = IBM.2107-75KX511/1, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 4096, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 12, numConfiguredVolumes = 652], NIAddressGroup: [id = IBM.2107-75KX511/8, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 32768, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 3, numConfiguredVolumes = 12], NIAddressGroup: [id = IBM.2107-75KX511/0, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 0, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 16, numConfiguredVolumes = 1792]]"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:138] "<client #7970c933> Received response: id: 7970c933:5a, peerID: 7970c933:59, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:139] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:59-->valid response),(7970c933:5a-->valid response)], it costs 29 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:139] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5b, peerID: 7970c933:5c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:190] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:190] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5c, peerID: 7970c933:5b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:228] "<client #7970c933> Received response: id: 7970c933:5b, peerID: 7970c933:5c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:228] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:247] "<client #7970c933> Received response: id: 7970c933:5c, peerID: 7970c933:5b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:247] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:5b-->valid response),(7970c933:5c-->valid response)], it costs 12 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:249] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5d, peerID: 7970c933:5e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:261] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:261] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5e, peerID: 7970c933:5d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:292] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:309] "<client #7970c933> Received response: id: 7970c933:5d, peerID: 7970c933:5e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIAddressGroup: [id = IBM.2107-75KX511/2, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 8192, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 7, numConfiguredVolumes = 448], NIAddressGroup: [id = IBM.2107-75KX511/1, deviceType = NIDeviceTypeFB, baseLogicalVolumeNumber = 4096, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 12, numConfiguredVolumes = 652], NIAddressGroup: [id = IBM.2107-75KX511/8, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 32768, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 3, numConfiguredVolumes = 12], NIAddressGroup: [id = IBM.2107-75KX511/0, deviceType = NIDeviceTypeCKD, baseLogicalVolumeNumber = 0, numLogicalVolumeNumbers = 4096, numLogicalSubsystem = 16, numConfiguredVolumes = 1792]]"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:318] "<client #7970c933> Received response: id: 7970c933:5e, peerID: 7970c933:5d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getAddressGroups(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:318] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:5d-->valid response),(7970c933:5e-->valid response)], it costs 23 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:318] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:5f, peerID: 7970c933:60, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:373] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:5f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:375] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:60, peerID: 7970c933:5f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:398] "<client #7970c933> Received response: id: 7970c933:5f, peerID: 7970c933:60, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:399] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:60"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:415] "<client #7970c933> Received response: id: 7970c933:60, peerID: 7970c933:5f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:415] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:5f-->valid response),(7970c933:60-->valid response)], it costs 15 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:417] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:61, peerID: 7970c933:62, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:462] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:61"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:462] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:62, peerID: 7970c933:61, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:504] "<client #7970c933> Received response: id: 7970c933:61, peerID: 7970c933:62, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:504] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:62"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:513] "<client #7970c933> Received response: id: 7970c933:62, peerID: 7970c933:61, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:513] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:61-->valid response),(7970c933:62-->valid response)], it costs 9 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:514] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:63, peerID: 7970c933:64, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:549] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:63"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:549] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:64, peerID: 7970c933:63, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:572] "<client #7970c933> Received response: id: 7970c933:63, peerID: 7970c933:64, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: [NIExtentPool: [id = IBM.2107-75KX511/P3, rankGroup = 1, type = NIExtentTypeCKD, userName = CKD_1, numRanks = 5, numVolumes = 516, numExtents = 12165, extentStatus = 0, extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 12880, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P2, rankGroup = 0, type = NIExtentTypeCKD, userName = CKD_0, numRanks = 4, numVolumes = 520, numExtents = 9368, extentStatus = 0, extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 
+0.15, numVirtualExtents = 11040, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P1, rankGroup = 1, type = NIExtentTypeFB, userName = FB_1, numRanks = 4, numVolumes = 516, numExtents = 6108, extentStatus = 0, extentLimitEnabled = true, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 10960, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0], NIExtentPool: [id = IBM.2107-75KX511/P0, rankGroup = 0, type = NIExtentTypeFB, userName = FB_0, numRanks = 5, numVolumes = 584, numExtents = 8601, extentStatus = 0, extentLimitEnabled = true
+, extentLimit = 1.0, extentThreshold = 0.15, numVirtualExtents = 12100, numVirtualRanks = 1, numAuxiliaryVolumes = 1, virtualExtentStatus = 0, virtualExtentLimitEnabled = false, virtualExtentLimit = 0.0, virtualExtentThreshold = 0.0, segmentSizeFlags = 64, egID = 0, eseMaxLimit = 1.0, eseMinLimit = 0.0, eseThreshold = 0.0, eseStatus = 0]]"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:573] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:64"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:583] "<client #7970c933> Received response: id: 7970c933:64, peerID: 7970c933:63, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getExtentPools(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:583] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:63-->valid response),(7970c933:64-->valid response)], it costs 10 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:584] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:65, peerID: 7970c933:66, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:659] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:65"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:660] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:66, peerID: 7970c933:65, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:686] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:66"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:700] "<client #7970c933> Received response: id: 7970c933:66, peerID: 7970c933:65, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:823] "<client #7970c933> Received response: id: 7970c933:65, peerID: 7970c933:66, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P3):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P3; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 35.0; % extents available: 64.0; # extents: 12165; # extents allowed: 12141; # extents allocated: 4285; # extents reserved: 24; # extents available: 7856; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 80.0; % virtual extents available: 19.0; # virtual extents: 12880; # virtual extents allowed: 12880; # virtual extents allocated: 10320; # virtual extents reserved: 0; # virtual extents available: 2560; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; # ese threshold:0.0; # 
+ese status:0; # monitor status:1; # total capacity: 13539645; # allow capacity: 13512933; # available capacity: 8743728; # allocated capacity: 4769205; # reserved capacity: 26712; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:09:823] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:65-->valid response),(7970c933:66-->valid response)], it costs 137 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:824] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:67, peerID: 7970c933:68, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:860] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:67"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:09:860] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:68, peerID: 7970c933:67, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:09:886] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:68"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:09:900] "<client #7970c933> Received response: id: 7970c933:68, peerID: 7970c933:67, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:26] "<client #7970c933> Received response: id: 7970c933:67, peerID: 7970c933:68, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P2):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P2; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 40.0; % extents available: 59.0; # extents: 9368; # extents allowed: 9345; # extents allocated: 3741; # extents reserved: 23; # extents available: 5604; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 94.0; % virtual extents available: 5.0; # virtual extents: 11040; # virtual extents allowed: 11040; # virtual extents allocated: 10400; # virtual extents reserved: 0; # virtual extents available: 640; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; # ese threshold:0.0; # ese s
+tatus:0; # monitor status:1; # total capacity: 10426584; # allow capacity: 10400985; # available capacity: 6237252; # allocated capacity: 4163733; # reserved capacity: 25599; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:10:26] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:67-->valid response),(7970c933:68-->valid response)], it costs 140 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:27] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:69, peerID: 7970c933:6a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:61] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:69"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:61] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6a, peerID: 7970c933:69, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:130] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:155] "<client #7970c933> Received response: id: 7970c933:6a, peerID: 7970c933:69, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:217] "<client #7970c933> Received response: id: 7970c933:69, peerID: 7970c933:6a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P1):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P1; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 76.0; % extents available: 23.0; # extents: 6108; # extents allowed: 6085; # extents allocated: 4630; # extents reserved: 23; # extents available: 1455; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 94.0; % virtual extents available: 5.0; # virtual extents: 10960; # virtual extents allowed: 10960; # virtual extents allocated: 10320; # virtual extents reserved: 0; # virtual extents available: 640; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; # ese threshold:0.0; # ese 
+status:0; # monitor status:1; # total capacity: 6254592; # allow capacity: 6231040; # available capacity: 1489920; # allocated capacity: 4741120; # reserved capacity: 23552; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 0; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:10:218] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:69-->valid response),(7970c933:6a-->valid response)], it costs 87 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:218] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6b, peerID: 7970c933:6c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:259] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:260] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6c, peerID: 7970c933:6b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:293] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:307] "<client #7970c933> Received response: id: 7970c933:6c, peerID: 7970c933:6b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:485] "<client #7970c933> Received response: id: 7970c933:6b, peerID: 7970c933:6c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.queryExtentAvailability(IBM.2107-75KX511/P0):Successful: true; Return code: 0; Extent pool: IBM.2107-75KX511/P0; Extent limit enabled: true; Extent limit: 100.0; Extent threshold: 15.0; Status: 0; % extents allocated: 60.0; % extents available: 39.0; # extents: 8601; # extents allowed: 8577; # extents allocated: 5211; # extents reserved: 24; # extents available: 3366; Virtual Extent limit enabled: false; Virtual Extent limit: 0.0; Virtual Extent threshold: 0.0; Virtual Extent Status: 0; % virtual extents allocated: 96.0; % virtual extents available: 3.0; # virtual extents: 12100; # virtual extents allowed: 12100; # virtual extents allocated: 11680; # virtual extents reserved: 0; # virtual extents available: 420; # number of tiers: 2; Managed by Easy-Tier: true; # ese max limit:100.0; # ese min limit:0.0; # ese threshold:0.0; # ese 
+status:0; # monitor status:1; # total capacity: 8807424; # allow capacity: 8782848; # available capacity: 3446784; # allocated capacity: 5336064; # reserved capacity: 24576; # migrate src capacity: 0; # migrate tgt capacity: 0; # ese allocated capacity: 589824; # segment size flag: 64"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:10:485] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:6b-->valid response),(7970c933:6c-->valid response)], it costs 188 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:486] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6d, peerID: 7970c933:6e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:524] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:524] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6e, peerID: 7970c933:6d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:551] "<client #7970c933> Received response: id: 7970c933:6d, peerID: 7970c933:6e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIArrayImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:552] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:598] "<client #7970c933> Received response: id: 7970c933:6e, peerID: 7970c933:6d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getArrays(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:10:598] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:6d-->valid response),(7970c933:6e-->valid response)], it costs 46 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:598] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:6f, peerID: 7970c933:70, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:663] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:6f"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:667] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:70, peerID: 7970c933:6f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:693] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:70"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:707] "<client #7970c933> Received response: id: 7970c933:70, peerID: 7970c933:6f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:737] "<client #7970c933> Received response: id: 7970c933:6f, peerID: 7970c933:70, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getRanks(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 18 instances of com.ibm.storage.ess.ni.resource.NIRankImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:10:738] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:6f-->valid response),(7970c933:70-->valid response)], it costs 44 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:738] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:71, peerID: 7970c933:72, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:862] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:71"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:10:862] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:72, peerID: 7970c933:71, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:10:892] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:72"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:10:913] "<client #7970c933> Received response: id: 7970c933:72, peerID: 7970c933:71, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:11:783] "<client #7970c933> Received response: id: 7970c933:71, peerID: 7970c933:72, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeFB):Successful: true; Return code: 0; Resource: 1100 instances of com.ibm.storage.ess.ni.resource.NIVolumeImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:11:783] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:71-->valid response),(7970c933:72-->valid response)], it costs 890 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:11:800] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:73, peerID: 7970c933:74, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:11:863] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:73"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:11:864] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:74, peerID: 7970c933:73, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:11:900] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:74"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:11:925] "<client #7970c933> Received response: id: 7970c933:74, peerID: 7970c933:73, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:527] "<client #7970c933> Received response: id: 7970c933:73, peerID: 7970c933:74, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getVolumes(IBM.2107-75KX511, NIDeviceTypeCKD):Successful: true; Return code: 0; Resource: 1804 instances of com.ibm.storage.ess.ni.resource.NIVolumeImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:13:527] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:73-->valid response),(7970c933:74-->valid response)], it costs 1627 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:554] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:75, peerID: 7970c933:76, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:617] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:75"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:617] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:76, peerID: 7970c933:75, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:644] "<client #7970c933> Received response: id: 7970c933:75, peerID: 7970c933:76, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 32 instances of com.ibm.storage.ess.ni.resource.NIFibreChannelPortImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:644] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:76"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:656] "<client #7970c933> Received response: id: 7970c933:76, peerID: 7970c933:75, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPhysicalConfigurationService.getFibreChannelPorts(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:13:656] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:75-->valid response),(7970c933:76-->valid response)], it costs 12 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:659] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:77, peerID: 7970c933:78, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:666] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:77"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:666] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:78, peerID: 7970c933:77, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:696] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:78"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:703] "<client #7970c933> Received response: id: 7970c933:78, peerID: 7970c933:77, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:724] "<client #7970c933> Received response: id: 7970c933:77, peerID: 7970c933:78, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:13:724] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:77-->valid response),(7970c933:78-->valid response)], it costs 25 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:725] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:79, peerID: 7970c933:7a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:777] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:79"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:778] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7a, peerID: 7970c933:79, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:789] "<client #7970c933> Received response: id: 7970c933:79, peerID: 7970c933:7a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):Successful: true; Return code: 0Candidate connection result: FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:49
+Attached Port: NIFCPPortID: IBM.2107-75KX511:258
+Link Destination Address: 000102
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:769
+Attached Port: NIFCPPortID: IBM.2107-75KX511:561
+Link Destination Address: 000231
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:258
+Attached Port: NIFCPPortID: IBM.2107-75KX511:49
+Link Destination Address: 0031
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:263
+Attached Port: NIFCPPortID: IBM.2107-75KX511:55
+Link Destination Address: 0037
+Attached ESS: IBM.210
+7-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:561
+Attached Port: NIFCPPortID: IBM.2107-75KX511:769
+Link Destination Address: 000301
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:55
+Attached Port: NIFCPPortID: IBM.2107-75KX511:263
+Link Destination Address: 000107
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:565
+Attached Port: NIFCPPortID: IBM.2107-75KX511:775
+Link Destination Address: 000307
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:775
+Attached Port: NIFCPPortID: IBM.2107-75KX511:565
+Link Destination Address: 000235
+Attached ESS: IBM.2107-75KX511
+"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:790] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:812] "<client #7970c933> Received response: id: 7970c933:7a, peerID: 7970c933:79, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/1a, IBM.2107-75KX511/25):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:13:812] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:79-->valid response),(7970c933:7a-->valid response)], it costs 22 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:813] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7b, peerID: 7970c933:7c, Src: (null), Dest: (IBM.2107-75KX5110, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:862] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7b"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:865] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7c, peerID: 7970c933:7b, Src: (null), Dest: (IBM.2107-75KX5111, 1), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:875] "<client #7970c933> Received response: id: 7970c933:7b, peerID: 7970c933:7c, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):Successful: true; Return code: 0; Resource: 38 instances of com.ibm.storage.ess.ni.resource.NILSSImpl"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:876] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7c"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:909] "<client #7970c933> Received response: id: 7970c933:7c, peerID: 7970c933:7b, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NILogicalConfigurationService.getLogicalSubsystems(IBM.2107-75KX511):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:13:909] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:7b-->valid response),(7970c933:7c-->valid response)], it costs 33 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:910] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7d, peerID: 7970c933:7e, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:13:940] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7d"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:11:13:945] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7e, peerID: 7970c933:7d, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:13:946] "<client #7970c933> Received response: id: 7970c933:7d, peerID: 7970c933:7e, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:11:14:0] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7e"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:11:14:8] "<client #7970c933> Received response: id: 7970c933:7e, peerID: 7970c933:7d, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIPPRCService.queryFCPAvailableForPPRC(IBM.2107-75KX511/25, IBM.2107-75KX511/26):Successful: true; Return code: 0Candidate connection result: FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:49
+Attached Port: NIFCPPortID: IBM.2107-75KX511:258
+Link Destination Address: 000102
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:769
+Attached Port: NIFCPPortID: IBM.2107-75KX511:561
+Link Destination Address: 000231
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:258
+Attached Port: NIFCPPortID: IBM.2107-75KX511:49
+Link Destination Address: 0031
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:775
+Attached Port: NIFCPPortID: IBM.2107-75KX511:565
+Link Destination Address: 000235
+Attached ESS: IBM.21
+07-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:55
+Attached Port: NIFCPPortID: IBM.2107-75KX511:263
+Link Destination Address: 000107
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:263
+Attached Port: NIFCPPortID: IBM.2107-75KX511:55
+Link Destination Address: 0037
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:561
+Attached Port: NIFCPPortID: IBM.2107-75KX511:769
+Link Destination Address: 000301
+Attached ESS: IBM.2107-75KX511
+FCP Candidate Connection: 
+Source Port: NIFCPPortID: IBM.2107-75KX511:565
+Attached Port: NIFCPPortID: IBM.2107-75KX511:775
+Link Destination Address: 000307
+Attached ESS: IBM.2107-75KX511
+"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:11:14:8] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:7d-->valid response),(7970c933:7e-->valid response)], it costs 7 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:11:965] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:7f, peerID: 7970c933:80, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:11:998] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:7f"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:36] "<client #7970c933> Received response: id: 7970c933:7f, peerID: 7970c933:80, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:36] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:80, peerID: 7970c933:7f, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:64] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:80"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:70] "<client #7970c933> Received response: id: 7970c933:80, peerID: 7970c933:7f, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c00, IBM.2107-75KX511/1c03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:71] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:7f-->valid response),(7970c933:80-->valid response)], it costs 7 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:72] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:81, peerID: 7970c933:82, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:114] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:81"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:120] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:82, peerID: 7970c933:81, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:125] "<client #7970c933> Received response: id: 7970c933:81, peerID: 7970c933:82, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:126] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:82"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:157] "<client #7970c933> Received response: id: 7970c933:82, peerID: 7970c933:81, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1d00, IBM.2107-75KX511/1d03):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:157] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:81-->valid response),(7970c933:82-->valid response)], it costs 31 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:158] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:83, peerID: 7970c933:84, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:189] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:83"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:196] "<client #7970c933> Received response: id: 7970c933:83, peerID: 7970c933:84, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:196] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:84, peerID: 7970c933:83, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:241] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:84"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:247] "<client #7970c933> Received response: id: 7970c933:84, peerID: 7970c933:83, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/1c04, IBM.2107-75KX511/1c07):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:248] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:83-->valid response),(7970c933:84-->valid response)], it costs 4 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:249] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:85, peerID: 7970c933:86, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:283] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:85"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:284] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:86, peerID: 7970c933:85, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):null"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:291] "<client #7970c933> Received response: id: 7970c933:85, peerID: 7970c933:86, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:291] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:86"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:340] "<client #7970c933> Received response: id: 7970c933:86, peerID: 7970c933:85, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8400, IBM.2107-75KX511/8403):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:340] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:85-->valid response),(7970c933:86-->valid response)], it costs 49 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:341] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:87, peerID: 7970c933:88, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:370] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:87"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:376] "<client #7970c933> Received response: id: 7970c933:87, peerID: 7970c933:88, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:376] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:88, peerID: 7970c933:87, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:408] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:88"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:415] "<client #7970c933> Received response: id: 7970c933:88, peerID: 7970c933:87, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8500, IBM.2107-75KX511/8503):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:415] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:87-->valid response),(7970c933:88-->valid response)], it costs 0 milliseconds."
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:417] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:89, peerID: 7970c933:8a, Src: (null), Dest: (IBM.2107-75KX5110, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:447] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:89"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:453] "<client #7970c933> Received response: id: 7970c933:89, peerID: 7970c933:8a, Src: (IBM.2107-75KX5110, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       NICommunicationClient.send()
+ [2017/02/15 23:12:12:453] "<client #7970c933-->9.11.238.130> sending (attempt 0): id: 7970c933:8a, peerID: 7970c933:89, Src: (null), Dest: (IBM.2107-75KX5111, 1), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):null"
+[DEBUG_GENERAL]       ni.communication.extensions.client.NICommunicationClient.handleLowLevelCommunication()
+ [2017/02/15 23:12:12:480] "<client #7970c933-->9.11.238.130> ACK received for 7970c933:8a"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIResponseExecutor.executeImpl()
+ [2017/02/15 23:12:12:487] "<client #7970c933> Received response: id: 7970c933:8a, peerID: 7970c933:89, Src: (IBM.2107-75KX5111, 1), Dest: (HMC1, 4), NIFlashCopyService.queryRelationship(IBM.2107-75KX511/8404, IBM.2107-75KX511/8407):Successful: true; Return code: 0; []"
+[DEBUG_GENERAL]       ni.communication.extensions.reliable.NIReliableCommunicationsClientImpl.waitForResponses()
+ [2017/02/15 23:12:12:487] "<client #7970c933> grouped response returned: GroupCTB: [(7970c933:89-->valid response),(7970c933:8a-->valid response)], it costs 3 milliseconds."

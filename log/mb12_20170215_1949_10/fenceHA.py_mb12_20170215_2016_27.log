@@ -1,0 +1,313 @@
+
+
+*****************************************************************
+Connecting to mb12h.tuc.stglabs.ibm.com,port 12301
+*****************************************************************
+
+
+
+*****************************************************************
+Telnet to mb12h.tuc.stglabs.ibm.com successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+Check if HA adapter exists in DS8K before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsdev -Cc adapter
+*****************************************************************
+
+SF75KX510ESS01 # date;lsdev -Cc adapter
+Wed Feb 15 20:22:44 MST 2017
+cpRPC0     Available          N/A
+cpRPC1     Available          N/A
+cpUPS10    Available          N/A
+cpUPS11    Available          N/A
+cpssfc003  Available 02-00-03 IBM Hankie FC adapter
+cpssfc010  Available 02-01-00 IBM Hankie FC adapter
+cpssfc023  Available 02-02-03 IBM Hankie FC adapter
+cpssfc030  Available 02-03-00 IBM Hankie FC adapter
+cpssfc0030 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0031 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0032 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0033 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0034 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0035 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0036 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0037 Available 02-00-03 IBM Hankie FC adapter
+cpssfc0100 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0101 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0102 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0103 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0104 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0105 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0106 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0107 Available 02-01-00 IBM Hankie FC adapter
+cpssfc0230 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0231 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0232 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0233 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0234 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0235 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0236 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0237 Available 02-02-03 IBM Hankie FC adapter
+cpssfc0300 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0301 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0302 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0303 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0304 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0305 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0306 Available 02-03-00 IBM Hankie FC adapter
+cpssfc0307 Available 02-03-00 IBM Hankie FC adapter
+ent0       Available 06-00    4-Port Gigabit Ethernet PCI-Express Adapter (e414571614102004)
+ent1       Available 06-01    4-Port Gigabit Ethernet PCI-Express Adapter (e414571614102004)
+ent2       Available 06-02    4-Port Gigabit Ethernet PCI-Express Adapter (e414571614102004)
+ent3       Available 06-03    4-Port Gigabit Ethernet PCI-Express Adapter (e414571614102004)
+iss002     Available 02-00-02 ISS FC-AL SerialRAID Adapter
+iss015     Available 02-01-05 ISS FC-AL SerialRAID Adapter
+iss025     Available 02-02-05 ISS FC-AL SerialRAID Adapter
+iss032     Available 02-03-02 ISS FC-AL SerialRAID Adapter
+sissas0    Available 03-00    PCIe3 x8 SAS RAID Internal Adapter 6Gb
+vra026     Available 02-02-06 VRA SAS VersaRAID Adapter
+vra037     Available 02-03-07 VRA SAS VersaRAID Adapter
+vsa0       Available          LPAR Virtual Serial Adapter
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Check DS8K machine status before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:22:44 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of HA adapters before test starts
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:22:45 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all HA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Start to fence HA adapter cpssfc010, need to wait 15 minutes...
+*****************************************************************
+
+SF75KX510ESS01 # date;/fenceHA cpssfc010;echo "exitcode:$?"
+Wed Feb 15 20:22:45 MST 2017
+IOCTL in progress directive: 5(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_CLEAR
+IOCTL in progress directive: 301(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:Adapter MLE Panic Error
+IOCTL in progress directive: 2(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_ENABLE
+IOCTL in progress directive: 5(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_CLEAR
+IOCTL in progress directive: 301(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:Adapter MLE Panic Error
+IOCTL in progress directive: 2(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_ENABLE
+IOCTL in progress directive: 5(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_CLEAR
+IOCTL in progress directive: 301(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:Adapter MLE Panic Error
+IOCTL in progress directive: 2(hex value), count: 1 adapter: b08 parm1: 0 parm2: 0
+Success from the kernel with directive:OSINJ_SC_ENABLE
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of HA adapter cpssfc010 is fenced or not
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/cpssfc010
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/cpssfc010
+Wed Feb 15 20:32:45 MST 2017
+
+OWNED_NODE1
+INSTALLED_NODE0
+INSTALLED_NODE1
+FENCED
+WS_INIT
+WS_COMPLETE
+
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+HA adapter cpssfc010 has been fenced
+*****************************************************************
+
+
+
+*****************************************************************
+Start to repair HA adapter cpssfc010
+*****************************************************************
+
+
+
+*****************************************************************
+Executing cmd: runact -s 'logicalName=="cpssfc010"' IBM.EssHA applicationLevelDeactivate
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="cpssfc010"' IBM.EssHA applicationLevelDeactivate;echo "exitcode:$?"
+Wed Feb 15 20:32:45 MST 2017
+Resource Action Response for applicationLevelDeactivate
+sd_element 1:
+        returnCode  = 0
+        errorNumber = 0
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing cmd: runact -s 'logicalName=="cpssfc010"' IBM.EssHA systemLevelActivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="cpssfc010"' IBM.EssHA systemLevelActivateRepair;echo "exitcode:$?"
+Wed Feb 15 20:33:53 MST 2017
+Resource Action Response for systemLevelActivateRepair
+sd_element 1:
+        returnCode  = 0
+        errorNumber = 0
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing cmd: runact -s 'logicalName=="cpssfc010"' IBM.EssHA applicationLevelActivate
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="cpssfc010"' IBM.EssHA applicationLevelActivate;echo "exitcode:$?"
+Wed Feb 15 20:36:01 MST 2017
+Resource Action Response for applicationLevelActivate
+sd_element 1:
+        returnCode  = 0
+        errorNumber = 0
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of HA adapters after test completes
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssHA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssHA
+Wed Feb 15 20:38:04 MST 2017
+Resource Persistent Attributes for IBM.EssHA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all HA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status after test completes
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:38:04 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Test Passed!
+*****************************************************************
+

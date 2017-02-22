@@ -1,0 +1,395 @@
+
+
+*****************************************************************
+Connecting to mb12h.tuc.stglabs.ibm.com,port 12301by default
+*****************************************************************
+
+
+
+*****************************************************************
+Telnet to mb12h.tuc.stglabs.ibm.com successfully!
+*****************************************************************
+
+
+
+*****************************************************************
+check whether we install this da card in the box
+*****************************************************************
+
+SF75KX510ESS01 # date;lsdev -Cc adapter |grep "iss002"
+Wed Feb 15 20:43:05 MST 2017
+iss002     Available 02-00-02 ISS FC-AL SerialRAID Adapter
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+DA adapter iss002 does exist in DS8K mb12h.tuc.stglabs.ibm.com,continue the Test
+*****************************************************************
+
+
+
+*****************************************************************
+check whether we are on the affinity node of the test DA card
+*****************************************************************
+
+SF75KX510ESS01 # date;cat /dev/cpss0/status/iss002
+Wed Feb 15 20:43:05 MST 2017
+
+OWNED_NODE0
+INSTALLED_NODE0
+AVAILABLE_NODE0
+INSTALLED_NODE1
+AVAILABLE_NODE1
+
+DA_AFFINITY_TO_NODE0
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+this cluster is the affinity of the DA card, continue the test 
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status before starting test
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 20:43:05 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of DA adapters before test starts
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssDA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssDA
+Wed Feb 15 20:43:06 MST 2017
+Resource Persistent Attributes for IBM.EssDA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all DA adapters is good, Continue the test!
+*****************************************************************
+
+
+
+*****************************************************************
+we are going to get the hexcode of the da card using the command:
+dacmd -x adapt | grep iss002 | awk '{print $3}'
+*****************************************************************
+
+SF75KX510ESS01 # date;dacmd -x adapt | grep iss002 | awk '{print $3}'
+Wed Feb 15 20:43:06 MST 2017
+0x82
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+we are going to fence the DA card using the following command for three times 
+dacmd -x adaptreset -a node=0x82
+*****************************************************************
+
+
+
+*****************************************************************
+the first time
+*****************************************************************
+
+SF75KX510ESS01 # date;dacmd -x adaptreset -a node=0x82
+Wed Feb 15 20:43:06 MST 2017
+
+ Sending reset to adapter 
+ Idx Hdle Node AState  AFlags LogicalName
+0x03 1002 0x82  0x00 0x06090000 iss002
+SF75KX510ESS01 # 
+SF75KX510ESS01 # date;echo "exitcode:$?"
+Wed Feb 15 20:43:06 MST 2017
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+test case will sleep for 1 min here...
+*****************************************************************
+
+
+
+*****************************************************************
+the second time
+*****************************************************************
+
+SF75KX510ESS01 # date;dacmd -x adaptreset -a node=0x82
+Wed Feb 15 20:44:06 MST 2017
+
+ Sending reset to adapter 
+ Idx Hdle Node AState  AFlags LogicalName
+0x03 1002 0x82  0x00 0x06090000 iss002
+SF75KX510ESS01 # 
+SF75KX510ESS01 # date;echo "exitcode:$?"
+Wed Feb 15 20:44:07 MST 2017
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+test case will sleep for 1 min here...
+*****************************************************************
+
+
+
+*****************************************************************
+the third time
+*****************************************************************
+
+SF75KX510ESS01 # date;dacmd -x adaptreset -a node=0x82
+Wed Feb 15 20:45:07 MST 2017
+
+ Sending reset to adapter 
+ Idx Hdle Node AState  AFlags LogicalName
+0x03 1002 0x82  0x00 0x06090000 iss002
+SF75KX510ESS01 # 
+SF75KX510ESS01 # date;echo "exitcode:$?"
+Wed Feb 15 20:45:07 MST 2017
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+test case will sleep for 1 min here...
+*****************************************************************
+
+
+
+*****************************************************************
+Check if the DA adapter iss002 is fenced or not
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/iss002
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/iss002
+Wed Feb 15 20:46:07 MST 2017
+
+OWNED_NODE0
+INSTALLED_NODE0
+INSTALLED_NODE1
+FENCED
+
+DA_AFFINITY_TO_NODE0
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+DA adapter iss002 has been fenced, test continue 
+*****************************************************************
+
+
+
+*****************************************************************
+Sleep 3 minutes before executing RAS repair...
+*****************************************************************
+
+
+
+*****************************************************************
+ISS adapter repair process - RAS repair:
+runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelDeactivateRepair
+runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelActivateRepair
+runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelVerifyRepair
+runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelActivateRepair
+runact -s 'logicalName=="iss002"' IBM.EssDA resetDATakeover
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelDeactivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelDeactivateRepair;echo "exitcode:$?"
+Wed Feb 15 20:49:07 MST 2017
+Resource Action Response for applicationLevelDeactivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelActivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelActivateRepair;echo "exitcode:$?"
+Wed Feb 15 20:50:10 MST 2017
+Resource Action Response for systemLevelActivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelVerifyRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="iss002"' IBM.EssDA systemLevelVerifyRepair;echo "exitcode:$?"
+Wed Feb 15 20:55:11 MST 2017
+Resource Action Response for systemLevelVerifyRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelActivateRepair
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="iss002"' IBM.EssDA applicationLevelActivateRepair;echo "exitcode:$?"
+Wed Feb 15 20:58:18 MST 2017
+Resource Action Response for applicationLevelActivateRepair
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Sleep for one minute...
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: runact -s 'logicalName=="iss002"' IBM.EssDA resetDATakeover
+*****************************************************************
+
+SF75KX510ESS01 # date;runact -s 'logicalName=="iss002"' IBM.EssDA resetDATakeover;echo "exitcode:$?"
+Wed Feb 15 21:00:33 MST 2017
+Resource Action Response for resetDATakeover
+sd_element 1:
+        returnCode = 0
+exitcode:0
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Check status of SE status after test RAS repair action
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsdev -Cl enc*
+*****************************************************************
+
+SF75KX510ESS01 # date;lsdev -Cl enc*
+Wed Feb 15 21:01:04 MST 2017
+enclosure0 Available n/a ISS Enclosure
+enclosure1 Available n/a ISS Enclosure
+enclosure2 Available n/a ISS Enclosure
+enclosure3 Available n/a ISS Enclosure
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all SE is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check status of DA adapters after test RAS repair action
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: lsrsrc -s state!=0 IBM.EssDA
+*****************************************************************
+
+SF75KX510ESS01 # date;lsrsrc -s state!=0 IBM.EssDA
+Wed Feb 15 21:01:04 MST 2017
+Resource Persistent Attributes for IBM.EssDA
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Status of all DA adapters is good
+*****************************************************************
+
+
+
+*****************************************************************
+Check DS8K machine status after test completes
+*****************************************************************
+
+
+
+*****************************************************************
+Executing command: cat /dev/cpss0/status/opmode
+*****************************************************************
+
+SF75KX510ESS01 # date; cat /dev/cpss0/status/opmode
+Wed Feb 15 21:01:04 MST 2017
+
+  CurEnv = Dual Cluster Operational
+  PreEnv = Dual Cluster Operational
+  LocPhase = 0x2A00
+  RemPhase = 0x2A00
+
+SF75KX510ESS01 # 
+
+
+*****************************************************************
+Machine status of mb12h.tuc.stglabs.ibm.com is good
+*****************************************************************
+
+
+
+*****************************************************************
+Test Passed!
+*****************************************************************
+

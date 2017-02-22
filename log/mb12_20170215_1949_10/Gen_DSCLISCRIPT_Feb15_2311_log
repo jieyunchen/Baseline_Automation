@@ -1,0 +1,62 @@
+mkfbvol -dev IBM.2107-75KX511 -extpool P0 -name FBvol_#h -cap 1 1c00-1c03
+mkfbvol -dev IBM.2107-75KX511 -extpool P1 -name FBvol_#h -cap 1 1d00-1d03
+mkfbvol -dev IBM.2107-75KX511 -extpool P0 -name FBvol_#h -cap 1 1c04-1c07
+showfbvol -dev IBM.2107-75KX511 1c00
+chfbvol -dev IBM.2107-75KX511 -name tempname 1c00
+mklcu -dev IBM.2107-75KX511  -qty 1 -id 84 -ss 2
+mklcu -dev IBM.2107-75KX511  -qty 1 -id 85 -ss 3
+mkckdvol -dev IBM.2107-75KX511 -extpool P2 -name CKDVol_#h -cap 3339 8400-8403
+mkckdvol -dev IBM.2107-75KX511 -extpool P3 -name CKDVol_#h -cap 3339 8500-8503
+mkckdvol -dev IBM.2107-75KX511 -extpool P2 -name CKDVol_#h -cap 3339 8404-8407
+mkaliasvol -dev IBM.2107-75KX511 -base 8500-8503 -order increment -qty 1 8504
+chckdvol -dev IBM.2107-75KX511 -name myckdvol 8504
+lsckdvol -dev IBM.2107-75KX511 8400-8403
+showckdvol -dev IBM.2107-75KX511 8504
+
+lsrank -dev IBM.2107-75KX511 
+lsrank -dev IBM.2107-75KX511 -state normal -extpool P1
+lsfbvol -dev IBM.2107-75KX511 -data not_normal -config normal
+lsfbvol -dev IBM.2107-75KX511 -data normal -config not_normal
+lsflash -dev IBM.2107-75KX511 0000-ffff
+lspprc -dev IBM.2107-75KX511 0000-ffff
+lssi
+lsarraysite -dev IBM.2107-75KX511 -state assigned
+lsarray -dev IBM.2107-75KX511 
+lsarray -dev IBM.2107-75KX511 -rank R17
+lsextpool -dev IBM.2107-75KX511 
+lsextpool -dev IBM.2107-75KX511 -rankgrp 0 -stgtype ckd
+lslcu -dev IBM.2107-75KX511 
+lslcu -dev IBM.2107-75KX511 -addrgrp 1
+lsckdvol -dev IBM.2107-75KX511 -extpool P2
+lsvolgrp -dev IBM.2107-75KX511 
+lsvolgrp -dev IBM.2107-75KX511 v0
+showarraysite -dev IBM.2107-75KX511 S1
+showarray -dev IBM.2107-75KX511 A17
+showrank -dev IBM.2107-75KX511 R17
+showextpool -dev IBM.2107-75KX511 P2
+lsfbvol -dev IBM.2107-75KX511 -lss 1d
+lsaddressgrp -dev IBM.2107-75KX511 
+lssi
+mkuser -pw AB9cdefg -group service,op_copy_services RegTester
+chuser -pw tucs0n RegTester
+lsuser
+showuser RegTester
+showpass
+rmuser -quiet RegTester
+lsioport -dev IBM.2107-75KX511 -l
+showioport -dev IBM.2107-75KX511 I0107
+showsp
+lssu
+chsi -desc BLsi IBM.2107-75KX511
+lsda IBM.2107-75KX511
+lsddm IBM.2107-75KX511
+lshba IBM.2107-75KX511
+lsframe IBM.2107-75KX511
+lsstgencl IBM.2107-75KX511
+lsserver -l
+lsportprof  IBM.2107-75KX511
+lshostconnect -dev IBM.2107-75KX511 
+lshostconnect  -dev IBM.2107-75KX511 -unknown
+lshosttype -l -type scsiall
+lskey IBM.2107-75KX511
+lspprcpath  -dev IBM.2107-75KX511 00-ff
